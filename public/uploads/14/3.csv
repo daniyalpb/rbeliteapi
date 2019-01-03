@@ -1,0 +1,683 @@
+id,cityname,pincode,stateid
+1,Alipurduar,NULL,36
+2,Bankura,NULL,36
+3,"Paschim Bardhaman",NULL,36
+4,"Purba Bardhaman",NULL,36
+5,Birbhum,NULL,36
+6,"Cooch Behar",NULL,36
+7,Darjeeling,NULL,36
+8,"Uttar Dinajpur",NULL,36
+9,Hooghly,NULL,36
+10,Howrah,NULL,36
+11,Jalpaiguri,NULL,36
+12,Jhargram,NULL,36
+13,Kolkata,NULL,36
+14,Kalimpong,NULL,36
+15,Malda,NULL,36
+16,"Paschim Medinipur",NULL,36
+17,"Purba Medinipur",NULL,36
+18,Murshidabad,NULL,36
+19,"North 24 Parganas",NULL,36
+20,"South 24 Parganas",NULL,36
+21,Purulia,NULL,36
+22,Anantapur,NULL,2
+23,Chittoor,NULL,2
+24,"East Godavari",NULL,2
+25,Guntur,NULL,2
+26,Krishna,NULL,2
+27,Kurnool,NULL,2
+28,Nellore,NULL,2
+29,Prakasam,NULL,2
+30,Srikakulam,NULL,2
+31,Visakhapatnam,NULL,2
+32,Vizianagaram,NULL,2
+33,"West Godavari",NULL,2
+34,"YSR Kadapa",NULL,2
+35,Tawang,NULL,3
+36,"West Kameng",NULL,3
+37,"East Kameng",NULL,3
+38,"Papum Pare",NULL,3
+39,"Kurung Kumey",NULL,3
+40,"Kra Daadi",NULL,3
+41,"Lower Subansiri",NULL,3
+42,"Upper Subansiri",NULL,3
+43,"West Siang",NULL,3
+44,"East Siang",NULL,3
+45,Siang,NULL,3
+46,"Upper Siang",NULL,3
+47,"Lower Siang",NULL,3
+48,"Lower Dibang Valley",NULL,3
+49,"Upper Dibang Valley",NULL,3
+50,Anjaw,NULL,3
+51,Lohit,NULL,3
+52,Namsai,NULL,3
+53,Changlang,NULL,3
+54,Tirap,NULL,3
+55,Longding,NULL,3
+56,Kamle,NULL,3
+57,Baksa,NULL,4
+58,Barpeta,NULL,4
+59,Biswanath,NULL,4
+60,Bongaigaon,NULL,4
+61,Cachar,NULL,4
+62,Charaideo,NULL,4
+63,Chirang,NULL,4
+64,Darrang,NULL,4
+65,Dhemaji,NULL,4
+66,Dhubri,NULL,4
+67,Dibrugarh,NULL,4
+68,"Dima Hasao",NULL,4
+69,Goalpara,NULL,4
+70,Golaghat,NULL,4
+71,Hailakandi,NULL,4
+72,Hojai,NULL,4
+73,Jorhat,NULL,4
+74,"Kamrup Metropolitan",NULL,4
+75,Kamrup,NULL,4
+76,"Karbi Anglong",NULL,4
+77,Karimganj,NULL,4
+78,Kokrajhar,NULL,4
+79,Lakhimpur,NULL,4
+80,Majuli,NULL,4
+81,Morigaon,NULL,4
+82,Nagaon,NULL,4
+83,Nalbari,NULL,4
+84,Sivasagar,NULL,4
+85,Sonitpur,NULL,4
+86,"South Salmara-Mankachar",NULL,4
+87,Tinsukia,NULL,4
+88,Udalguri,NULL,4
+89,"West Karbi Anglong",NULL,4
+90,Araria,NULL,5
+91,"	Arwal",NULL,5
+92,Aurangabad,NULL,5
+93,Begusarai,NULL,5
+94,Bhagalpur,NULL,5
+95,Bhojpur,NULL,5
+96,Buxar,NULL,5
+97,Darbhanga,NULL,5
+98,"East Champaran",NULL,5
+99,Gaya,NULL,5
+100,Gopalganj,NULL,5
+101,Jamui,NULL,5
+102,Jehanabad,NULL,5
+103,Khagaria,NULL,5
+104,Kishanganj,NULL,5
+105,Kaimur,NULL,5
+106,Katihar,NULL,5
+107,Lakhisarai,NULL,5
+108,Madhubani,NULL,5
+109,Munger,NULL,5
+110,Madhepura,NULL,5
+111,Muzaffarpur,NULL,5
+112,Nalanda,NULL,5
+113,Nawada,NULL,5
+114,Patna,NULL,5
+115,Purnia,NULL,5
+116,Rohtas,NULL,5
+117,Saharsa,NULL,5
+118,Samastipur,NULL,5
+119,Sheohar,NULL,5
+120,Sheikhpura,NULL,5
+121,Saran,NULL,5
+122,Sitamarhi,NULL,5
+123,Supaul,NULL,5
+124,Siwan,NULL,5
+125,Vaishali,NULL,5
+126,"West Champaran",NULL,5
+127,Chandigarh,NULL,6
+128,Balod,NULL,7
+129,"Baloda Bazar",NULL,7
+130,Balrampur,NULL,7
+131,Bastar,NULL,7
+132,Bemetara,NULL,7
+133,Bijapur,NULL,7
+134,Bilaspur,NULL,7
+135,Dantewada,NULL,7
+136,Dhamtari,NULL,7
+137,Durg,NULL,7
+138,Gariaband,NULL,7
+139,Janjgir-Champa,NULL,7
+140,Jashpur,NULL,7
+141,Kabirdham,NULL,7
+142,Kanker,NULL,7
+143,Kondagaon,NULL,7
+144,Korba,NULL,7
+145,Koriya,NULL,7
+146,Mahasamund,NULL,7
+147,Mungeli,NULL,7
+148,Narayanpur,NULL,7
+149,Raigarh,NULL,7
+150,Raipur,NULL,7
+151,Rajnandgaon,NULL,7
+152,Sukma,NULL,7
+153,Surajpur,NULL,7
+154,Surguja,NULL,7
+155,"Dadra and Nagar Haveli",NULL,8
+156,"Daman district",NULL,9
+157,"Diu district",NULL,9
+158,"New Delhi",NULL,10
+159,"North Delhi",NULL,10
+160,"North West Delhi",NULL,10
+161,"West Delhi",NULL,10
+162,"South West Delhi",NULL,10
+163,"South Delhi",NULL,10
+164,"South East Delhi",NULL,10
+165,"Central Delhi",NULL,10
+166,"North East Delhi",NULL,10
+167,Shahdara,NULL,10
+168,"East Delhi",NULL,10
+169,Bicholim,NULL,11
+170,Canacona,NULL,11
+171,Cuncolim,NULL,11
+172,Curchorem,NULL,11
+173,Mapusa,NULL,11
+174,Margao,NULL,11
+175,Mormugao,NULL,11
+176,Panaji,NULL,11
+177,Pernem,NULL,11
+178,Ponda,NULL,11
+179,Quepem,NULL,11
+180,Sanguem,NULL,11
+181,Sanquelim,NULL,11
+182,Valpoi,NULL,11
+183,Ahmedabad,NULL,12
+184,Amreli,NULL,12
+185,Anand,NULL,12
+186,Aravalli,NULL,12
+187,Banaskantha,NULL,12
+188,Bharuch,NULL,12
+189,Bhavnagar,NULL,12
+190,Botad,NULL,12
+191,"Chhota Udaipur",NULL,12
+192,Dahod,NULL,12
+193,Dang,NULL,12
+194,"Devbhoomi Dwarka",NULL,12
+195,Gandhinagar,NULL,12
+196,"Gir Somnath",NULL,12
+197,Jamnagar,NULL,12
+198,Junagadh,NULL,12
+199,Kutch,NULL,12
+200,Kheda,NULL,12
+201,Mahisagar,NULL,12
+202,Mehsana,NULL,12
+203,Morbi,NULL,12
+204,Narmada,NULL,12
+205,Navsari,NULL,12
+206,Panchmahal,NULL,12
+207,Patan,NULL,12
+208,Porbandar,NULL,12
+209,Rajkot,NULL,12
+210,Sabarkantha,NULL,12
+211,Surat,NULL,12
+212,Surendranagar,NULL,12
+213,Tapi,NULL,12
+214,Vadodara,NULL,12
+215,Valsad,NULL,12
+216,Ambala,NULL,13
+217,Bhiwani,NULL,13
+218,"Charkhi Dadri",NULL,13
+219,Faridabad,NULL,13
+220,Fatehabad,NULL,13
+221,Gurugram,NULL,13
+222,Hisar,NULL,13
+223,Jhajjar,NULL,13
+224,Jind,NULL,13
+225,Kaithal,NULL,13
+226,Karnal,NULL,13
+227,Kurukshetra,NULL,13
+228,Mahendragarh,NULL,13
+229,Nuh,NULL,13
+230,Palwal,NULL,13
+231,Panchkula,NULL,13
+232,Panipat,NULL,13
+233,Rewar,NULL,13
+234,Rohtak,NULL,13
+235,Sirsa,NULL,13
+236,Sonipat,NULL,13
+237,Yamunanagar,NULL,13
+238,Bilaspur,NULL,14
+239,Chamba,NULL,14
+240,Hamirpur,NULL,14
+241,Kangra,NULL,14
+242,Kinnaur,NULL,14
+243,Kullu,NULL,14
+244,"Lahaul and Spiti",NULL,14
+245,Mandi,NULL,14
+246,Shimla,NULL,14
+247,Sirmaur,NULL,14
+248,Solan,NULL,14
+249,Una,NULL,14
+250,Garhwa,NULL,16
+251,Palamu,NULL,16
+252,Latehar,NULL,16
+253,Chatra,NULL,16
+254,Hazaribagh,NULL,16
+255,Koderma,NULL,16
+256,Giridih,NULL,16
+257,Ramgarh,NULL,16
+258,Bokaro,NULL,16
+259,"Dhanbad district",NULL,16
+260,Lohardaga,NULL,16
+261,Gumla,NULL,16
+262,Simdega,NULL,16
+263,Ranchi,NULL,16
+264,Khunti,NULL,16
+265,"West Singhbhum",NULL,16
+266,"Saraikela Kharsawan",NULL,16
+267,"East Singhbhum",NULL,16
+268,Jamtara,NULL,16
+269,Deoghar,NULL,16
+270,Dumka,NULL,16
+271,Pakur,NULL,16
+272,Godda,NULL,16
+273,Sahebganj,NULL,16
+274,Bagalkot,NULL,17
+275,Belagavi,NULL,17
+276,Vijayapura,NULL,17
+277,Dharwad,NULL,17
+278,Gadag,NULL,17
+279,Haveri,NULL,17
+280,"Uttara Kannada",NULL,17
+281,"Bengaluru Urban",NULL,17
+282,"Bengaluru Rural",NULL,17
+283,Ramanagara,NULL,17
+284,Chikkaballapur,NULL,17
+285,Chitradurga,NULL,17
+286,Davanagere,NULL,17
+287,Kolar,NULL,17
+288,Shivamogga,NULL,17
+289,Tumakuru,NULL,17
+290,Ballari,NULL,17
+291,Bidar,NULL,17
+292,Kalaburagi,NULL,17
+293,Koppal,NULL,17
+294,Raichur,NULL,17
+295,Yadgir,NULL,17
+296,Alappuzha,NULL,18
+297,Ernakulam,NULL,18
+298,Idukki,NULL,18
+299,Kannur,NULL,18
+300,Kasaragod,NULL,18
+301,Kollam,NULL,18
+302,Kottayam,NULL,18
+303,Kozhikode,NULL,18
+304,Malappuram,NULL,18
+305,Palakkad,NULL,18
+306,Pathanamthitta,NULL,18
+307,Thiruvananthapuram,NULL,18
+308,Thrissur,NULL,18
+309,Wayanad,NULL,18
+310,LAKSHADWEEP,NULL,19
+311,Agar,NULL,20
+312,Alirajpur,NULL,20
+313,"Anuppur ",NULL,20
+314,"Ashok Nagar",NULL,20
+315,Balaghat,NULL,20
+316,Barwani,NULL,20
+317,Betul,NULL,20
+318,Bhind,NULL,20
+319,Bhopal,NULL,20
+320,Burhanpur,NULL,20
+321,Chhatarpur,NULL,20
+322,Chhindwara,NULL,20
+323,Damoh,NULL,20
+324,Datia,NULL,20
+325,Dewas,NULL,20
+326,Dhar,NULL,20
+327,Dindori,NULL,20
+328,Guna,NULL,20
+329,Gwalior,NULL,20
+330,Harda,NULL,20
+331,Hoshangabad,NULL,20
+332,Indore,NULL,20
+333,Jabalpur,NULL,20
+334,Jhabua,NULL,20
+335,Katni,NULL,20
+336,"Khandwa (East Nimar)",NULL,20
+337,"Khargone (West Nimar)",NULL,20
+338,Mandla,NULL,20
+339,Mandsaur,NULL,20
+340,Morena,NULL,20
+341,Narsinghpur,NULL,20
+342,Neemuch,NULL,20
+343,Panna,NULL,20
+344,Raisen,NULL,20
+345,Rajgarh,NULL,20
+346,Ratlam,NULL,20
+347,Rewa,NULL,20
+348,Sagar,NULL,20
+349,Satna,NULL,20
+350,Sehore,NULL,20
+351,Seoni,NULL,20
+352,Shahdol,NULL,20
+353,Shajapur,NULL,20
+354,Sheopur,NULL,20
+355,Shivpuri,NULL,20
+356,Singrauli,NULL,20
+357,Tikamgarh,NULL,20
+358,Ujjain,NULL,20
+359,Umaria,NULL,20
+360,Vidisha,NULL,20
+361,Akola,NULL,21
+362,Amravati,NULL,21
+363,Buldana,NULL,21
+364,Yavatmal,NULL,21
+365,Washim,NULL,21
+366,Aurangabad,NULL,21
+367,Beed,NULL,21
+368,Jalna,NULL,21
+369,Osmanabad,NULL,21
+370,Latur,NULL,21
+371,Nanded,NULL,21
+372,Parbhani,NULL,21
+373,Hingoli,NULL,21
+374,Mumbai,NULL,21
+375,Suburban,NULL,21
+376,Thane,NULL,21
+377,Palghar,NULL,21
+378,Raigad,NULL,21
+379,Ratnagiri,NULL,21
+380,Sindhudurg,NULL,21
+381,Bhandara,NULL,21
+382,Chandrapur,NULL,21
+383,Gadchiroli,NULL,21
+384,Wardha,NULL,21
+385,Nagpur,NULL,21
+386,Gondia,NULL,21
+387,Ahmednagar,NULL,21
+388,Dhule,NULL,21
+389,Jalgaon,NULL,21
+390,Nashik,NULL,21
+391,Nandurbar,NULL,21
+392,Kolhapur,NULL,21
+393,Pune,NULL,21
+394,Sangli,NULL,21
+395,Solapur,NULL,21
+396,Satara,NULL,21
+397,Bishnupur,NULL,22
+398,Thoubal,NULL,22
+399,"Imphal East",NULL,22
+400,"Imphal West",NULL,22
+401,Senapati,NULL,22
+402,Ukhrul,NULL,22
+403,Chandel,NULL,22
+404,Churachandpur,NULL,22
+405,Tamenglong,NULL,22
+406,Jiribam,NULL,22
+407,Kangpokpi,NULL,22
+408,Kakching,NULL,22
+409,Tengnoupal,NULL,22
+410,Kamjong,NULL,22
+411,Noney,NULL,22
+412,Pherzawl,NULL,22
+413,Zunehboto,NULL,25
+414,Kohima,NULL,25
+415,Mokokchung,NULL,25
+416,Phek,NULL,25
+417,Chukitong,NULL,25
+418,Chumukhedima,NULL,25
+419,Dimapur,NULL,25
+420,Tuengsang,NULL,25
+421,Mon,NULL,25
+422,Wokha,NULL,25
+423,Angul,NULL,26
+424,Boudh,NULL,26
+425,Balangir,NULL,26
+426,Bargarh,NULL,26
+427,Balasore,NULL,26
+428,Bhadrak,NULL,26
+429,Cuttack,NULL,26
+430,Debagarh,NULL,26
+431,Dhenkanal,NULL,26
+432,Ganjam,NULL,26
+433,Gajapati,NULL,26
+434,Jharsuguda,NULL,26
+435,Jajpur,NULL,26
+436,Jagatsinghapur,NULL,26
+437,Khordha,NULL,26
+438,Kendujhar,NULL,26
+439,Kalahandi,NULL,26
+440,Kandhamal,NULL,26
+441,Koraput,NULL,26
+442,Kendrapara,NULL,26
+443,Malkangiri,NULL,26
+444,Mayurbhanj,NULL,26
+445,Nabarangpur,NULL,26
+446,Nuapada,NULL,26
+447,Nayagarh,NULL,26
+448,Puri,NULL,26
+449,Rayagada,NULL,26
+450,Sambalpur,NULL,26
+451,Subarnapur,NULL,26
+452,Sundergarh,NULL,26
+453,Pondicherry,NULL,27
+454,Mahe,NULL,27
+455,Yanam,NULL,27
+456,Amritsar,NULL,28
+457,Barnala,NULL,28
+458,Bathinda,NULL,28
+459,Faridkot,NULL,28
+460,"Fatehgarh Sahib",NULL,28
+461,Firozpur,NULL,28
+462,Fazilka,NULL,28
+463,Gurdaspur,NULL,28
+464,Hoshiarpur,NULL,28
+465,Jalandhar,NULL,28
+466,Kapurthala,NULL,28
+467,Ludhiana,NULL,28
+468,Mansa,NULL,28
+469,Moga,NULL,28
+470,"Sri Muktsar Sahib",NULL,28
+471,Pathankot,NULL,28
+472,Patiala,NULL,28
+473,Rupnagar,NULL,28
+474,"Sahibzada Ajit Singh Nagar",NULL,28
+475,Sangrur,NULL,28
+476,"	Shahid Bhagat Singh Nagar",NULL,28
+477,"Tarn Taran",NULL,28
+478,Ajmer,NULL,29
+479,Alwar,NULL,29
+480,Banswara,NULL,29
+481,Baran,NULL,29
+482,Barmer,NULL,29
+483,Bharatpur,NULL,29
+484,Bhilwara,NULL,29
+485,Bikaner,NULL,29
+486,Bundi,NULL,29
+487,Chittorgarh,NULL,29
+488,Churu,NULL,29
+489,Dausa,NULL,29
+490,Dholpur,NULL,29
+491,Dungarpur,NULL,29
+492,Hanumangarh,NULL,29
+493,Jaipur,NULL,29
+494,Jaisalmer,NULL,29
+495,Jalor,NULL,29
+496,Jhalawar,NULL,29
+497,Jhunjhunu,NULL,29
+498,Jodhpur,NULL,29
+499,Karauli,NULL,29
+500,Kota,NULL,29
+501,Nagaur,NULL,29
+502,Pali,NULL,29
+503,Pratapgarh,NULL,29
+504,Rajsamand,NULL,29
+505,"Sawai Madhopur",NULL,29
+506,Sikar,NULL,29
+507,Sirohi,NULL,29
+508,"Sri Ganganagar",NULL,29
+509,Tonk,NULL,29
+510,Udaipur,NULL,29
+511,"East Sikkim",NULL,30
+512,"North Sikkim",NULL,30
+513,"South Sikkim",NULL,30
+514,"West Sikkim",NULL,30
+515,Ariyalur,NULL,31
+516,Chennai,NULL,31
+517,Coimbatore,NULL,31
+518,Cuddalore,NULL,31
+519,Dharmapuri,NULL,31
+520,Dindigul,NULL,31
+521,Erode,NULL,31
+522,Kanchipuram,NULL,31
+523,Kanniyakumari,NULL,31
+524,Karur,NULL,31
+525,Krishnagiri,NULL,31
+526,Madurai,NULL,31
+527,Nagapattinam,NULL,31
+528,Namakkal,NULL,31
+529,"The Nilgiris",NULL,31
+530,Perambalur,NULL,31
+531,Pudukkottai,NULL,31
+532,Ramanathapuram,NULL,31
+533,Salem,NULL,31
+534,Sivaganga,NULL,31
+535,Thanjavur,NULL,31
+536,Theni,NULL,31
+537,Thoothukudi,NULL,31
+538,Tiruchirappalli,NULL,31
+539,Tirunelveli,NULL,31
+540,Tiruppur,NULL,31
+541,Tiruvallur,NULL,31
+542,Tiruvannamalai,NULL,31
+543,Tiruvarur,NULL,31
+544,Vellore,NULL,31
+545,Viluppuram,NULL,31
+546,Virudhunagar,NULL,31
+547,Adilabad,NULL,32
+548,"Bhadradri Kothagudem",NULL,32
+549,Hyderabad,NULL,32
+550,Jagtial,NULL,32
+551,Jangaon,NULL,32
+552,"Jayashankar Bhupalapally",NULL,32
+553,"Jogulamba Gadwal",NULL,32
+554,Kamareddy,NULL,32
+555,Karimnagar,NULL,32
+556,Khammam,NULL,32
+557,"Kumarambheem Asifabad",NULL,32
+558,Mahabubabad,NULL,32
+559,Mahabubnagar,NULL,32
+560,Mancherial,NULL,32
+561,Medak,NULL,32
+562,Medchal–Malkajgiri,NULL,32
+563,Nagarkurnool,NULL,32
+564,Nalgonda,NULL,32
+565,Nirmal,NULL,32
+566,Nizamabad,NULL,32
+567,Peddapalli,NULL,32
+568,"Rajanna Sircilla",NULL,32
+569,"Ranga Reddy",NULL,32
+570,Sangareddy,NULL,32
+571,Siddipet,NULL,32
+572,Suryapet,NULL,32
+573,Vikarabad,NULL,32
+574,Wanaparthy,NULL,32
+575,"Warangal Rural",NULL,32
+576,"Warangal Urban",NULL,32
+577,"Yadadri Bhuvanagiri",NULL,32
+578,"SOUTH TRIPURA",NULL,33
+579,"WEST TRIPURA",NULL,33
+580,Udaipur,NULL,33
+581,Agartala,NULL,33
+582,Kailashahar,NULL,33
+583,Amarpur,NULL,33
+584,Badarghat,NULL,33
+585,Beloniya,NULL,33
+586,"Dharma Nagar",NULL,33
+587,Jogendranagar,NULL,33
+588,Kamalpur,NULL,33
+589,Kanchanpur,NULL,33
+590,Khowai,NULL,33
+591,Kumarghat,NULL,33
+592,Kunjaban,NULL,33
+593,Ranirbazar,NULL,33
+594,Sabroom,NULL,33
+595,Ambassa,NULL,33
+596,Teliamura,NULL,33
+597,"NORTH TRIPURA",NULL,33
+598,Agra,NULL,34
+599,Allahabad,NULL,34
+600,Aligarh,NULL,34
+601,"Ambedkar Nagar",NULL,34
+602,Auraiya,NULL,34
+603,Azamgarh,NULL,34
+604,Barabanki,NULL,34
+605,Badaun,NULL,34
+606,Bahraich,NULL,34
+607,Bijnor,NULL,34
+608,Ballia,NULL,34
+609,"Banda District",NULL,34
+610,Balrampur,NULL,34
+611,Bareilly,NULL,34
+612,Basti,NULL,34
+613,Bulandshahr,NULL,34
+614,Chandauli,NULL,34
+615,Chitrakoot,NULL,34
+616,Deoria,NULL,34
+617,Etah,NULL,34
+618,Etawah,NULL,34
+619,Firozabad,NULL,34
+620,Farrukhabad,NULL,34
+621,Fatehpur,NULL,34
+622,Faizabad,NULL,34
+623,"Gautam Buddha Nagar",NULL,34
+624,Gonda,NULL,34
+625,Ghazipur,NULL,34
+626,Gorkakhpur,NULL,34
+627,Ghaziabad,NULL,34
+628,"Hapur District",NULL,34
+629,Hamirpur,NULL,34
+630,Hardoi,NULL,34
+631,Hathras,NULL,34
+632,Jhansi,NULL,34
+633,Amroha,NULL,34
+634,"Jaunpur District",NULL,34
+635,"Kanpur Dehat",NULL,34
+636,Kannauj,NULL,34
+637,"Kanpur Nagar",NULL,34
+638,"Kanshi Ram Nagar",NULL,34
+639,Kaushambi,NULL,34
+640,Kushinagar,NULL,34
+641,Lalitpur,NULL,34
+642,"Lakhimpur Kheri",NULL,34
+643,Lucknow,NULL,34
+644,Mau,NULL,34
+645,Meerut,NULL,34
+646,Maharajganj,NULL,34
+647,Mahoba,NULL,34
+648,Mirzapur,NULL,34
+649,Moradabad,NULL,34
+650,Mainpuri,NULL,34
+651,Mathura,NULL,34
+652,Muzaffarnagar,NULL,34
+653,Pilibhit,NULL,34
+654,Pratapgarh,NULL,34
+655,Rampur,NULL,34
+656,"Rae Bareli",NULL,34
+657,Saharanpur,NULL,34
+658,Sitapur,NULL,34
+659,Shahjahanpur,NULL,34
+660,Shamli,NULL,34
+661,Sambhal,NULL,34
+662,Siddharthnagar,NULL,34
+663,Sonbhadra,NULL,34
+664,"Sant Ravidas Nagar",NULL,34
+665,Sultanpur,NULL,34
+666,Shravasti,NULL,34
+667,Unnao,NULL,34
+668,Varanasi,NULL,34
+669,"Sant Kabir Nagar",NULL,34
+670,Almora,NULL,35
+671,Bageshwar,NULL,35
+672,Chamoli,NULL,35
+673,Champawat,NULL,35
+674,Dehradun,NULL,35
+675,Haridwar,NULL,35
+676,Nainital,NULL,35
+677,"Pauri Garhwal",NULL,35
+678,Pithoragarh,NULL,35
+679,Rudraprayag,NULL,35
+680,"Tehri Garhwal",NULL,35
+681,"Udham Singh Nagar",NULL,35
+682,Uttarkashi,NULL,35
