@@ -148,5 +148,7 @@ Route::post('get-complete-orders','API\FeedBackController@getcompleteorders');
 Route::post('display-feedback-form','API\FeedBackController@displayfeedbackform');
 
 Route::post('save-rate','API\FeedBackController@saverate');
+
+Route::post('display-rate','API\FeedBackController@displayrate');
 //Nitin End
 
