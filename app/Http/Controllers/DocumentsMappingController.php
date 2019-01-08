@@ -19,7 +19,7 @@ class DocumentsMappingController extends Controller
     }
 
     public function savedocumentsmapping(Request $req){
-    	$savedata = DB::select('call save_productwise_documents_mapping(?,?)',array( $req->proid,$req->docid));
+    	$savedata = DB::select('call save_productwise_documents_mapping(?,?,?)',array( $req->proid,$req->docid,$req->manradio));
     	if(count($savedata)>0){
     		return redirect()->back()->with('message', 'Document mapping successfully.');
     	}else{
