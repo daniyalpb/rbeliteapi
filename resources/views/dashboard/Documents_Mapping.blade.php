@@ -22,7 +22,7 @@
 						</div>
 						<div class="col-md-6">
 							<select type="text" name="proid" id="proid" class="form-control proid" required="true">
-								<option selected disabled="" value="">---Select-----</option>
+								<option selected disabled="" value="0">---Select-----</option>
 								@foreach($product as $val)
 									<option value="{{ $val->id }}">{{ $val->name }}</option>
 								@endforeach
@@ -37,11 +37,9 @@
 							<label>Document Name</label>
 						</div>
 						<div class="col-md-6">
-							<select type="text" name="docid" id="docid" class="form-control docid">
-								<option selected disabled="">---Select-----</option>
-								@foreach($docname as $a)
-									<option value="{{ $a->doc_id }}">{{ $a->document_name }}</option>
-								@endforeach
+							<select type="text" name="docid" id="docid" class="form-control docid" disabled="true">
+								<option selected disabled="" value="0">---Select-----</option>
+								
 							</select>
 						</div>
 					</div><br>
@@ -88,60 +86,6 @@
 	</div>
 </div>
 
-
-<!-- Modal -->
-  <!-- <div class="modal fade" id="product" role="dialog">
-    <div class="modal-dialog modal-md">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          	<form action="{{url('save-documents-mapping')}}" method="post" enctype="multipart/form-data">
-					{{ csrf_field() }}
-				
-					<div class="row">
-						<div class="col-md-3">
-							<label>Product Name</label>
-						</div>
-						<div class="col-md-9">
-							<select type="text" name="proid" id="proid" class="form-control">
-								<option selected disabled="">---Select-----</option>
-								@foreach($product as $val)
-									<option value="{{ $val->id }}">{{ $val->name }}</option>
-								@endforeach
-							</select>
-						</div>
-					</div><br>
-
-					<div class="row">
-						<div class="col-md-3">
-							<label>Document Name</label>
-						</div>
-						<div class="col-md-9">
-							<select type="text" name="docid" id="docid" class="form-control">
-								<option selected disabled="">---Select-----</option>
-								@foreach($docname as $a)
-									<option value="{{ $a->doc_id }}">{{ $a->document_name }}</option>
-								@endforeach
-							</select>
-						</div>
-					</div><br>
-
-					<div class="row">
-						<div class="col-md-6">
-						</div>
-						<div class="col-md-6">
-							<button type="submit" class="btn btn-success">Submit</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button><br>
-						</div>
-					</div>
-				</form>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript">
   	$("document").ready(function(){
@@ -149,6 +93,23 @@
 	        $("div.alert").remove();
 	    }, 2000 ); // 5 secs
 
+	});
+
+	$('.proid').change(function(){
+		var proid = $(this).val();
+		$.ajax({
+			url : 'get-doc-productwise/{proid}',
+			type : 'get',
+			data : { proid:proid },
+			success : function(resdatanew){
+				$('#docid').prop('disabled', false);
+				$("#docid").empty();
+				$.each(resdatanew, function(indexnew) {
+					$('#docid').append('<option value="'+resdatanew[indexnew].doc_id+'">'+resdatanew[indexnew].document_name+'</option>');
+			    });
+			    $(':input[type="submit"]').prop('disabled', false);
+			}
+		})
 	});
 
 	$('.proid').change(function(){

@@ -14,8 +14,8 @@ class DocumentsMappingController extends Controller
 {
     public function documentsmapping(){
     	$product = DB::select('call Get_all_Product()');
-    	$docname = DB::select('call Get_all_DocName()');
-    	return view('dashboard.Documents_Mapping',['product'=>$product,'docname'=>$docname]);
+    	//$docname = DB::select('call Get_all_DocName()');
+    	return view('dashboard.Documents_Mapping',['product'=>$product]);
     }
 
     public function savedocumentsmapping(Request $req){
@@ -25,6 +25,11 @@ class DocumentsMappingController extends Controller
     	}else{
     		return redirect()->back()->with('message', 'Failed document mapping.');
     	}
+    }
+
+    public function getdocproductwise(Request $req){
+        $getalldocname = DB::select('call Get_all_DocName(?)',array($req->proid));
+        return $getalldocname;
     }
 
     public function getmappingdocproductwise(Request $req){

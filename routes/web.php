@@ -116,6 +116,8 @@ Route::get('documents-mapping','DocumentsMappingController@documentsmapping');
 Route::post('save-documents-mapping','DocumentsMappingController@savedocumentsmapping');
 Route::get('get-mapping-doc-productwise/{proid}','DocumentsMappingController@getmappingdocproductwise');
 
+Route::get('get-doc-productwise/{proid}','DocumentsMappingController@getdocproductwise');
+
 Route::get('del-pro-doc-mapping/{productid}/{docid}','DocumentsMappingController@delprodocmapping');
 
 Route::get('elite-receipt/{id}','EliteReceiptController@pdf');

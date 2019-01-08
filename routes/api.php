@@ -142,5 +142,11 @@ Route::post('save-vehicle-registration-certificate-service-8','API\VehicleRegist
 Route::post('save-transfer-ncb-benefits-service-5','API\TransferOFNCBBenefitsController@savetransferncbbenefitsservice5');
 
 Route::post('save-feedback-form','API\FeedBackController@savefeedbackform');
+
+Route::post('get-complete-orders','API\FeedBackController@getcompleteorders');
+
+Route::post('display-feedback-form','API\FeedBackController@displayfeedbackform');
+
+Route::post('save-rate','API\FeedBackController@saverate');
 //Nitin End
 
