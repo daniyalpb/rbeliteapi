@@ -82,6 +82,16 @@ Route::get('crm-history/{id}','CrmController@getcrmhistory');
 Route::get('closed-followup/{reqid}','CrmController@closedfollowup');
 //shubham End//
 
+
+
+//Paritosh start
+Route::get('product-city-price-mapping','MappingController@product_city_price_mapping');
+Route::get('get-product-mapped-city-price/{product_id}','MappingController@get_product_mapped_city_price');
+Route::post('update-product-city-price-mapping','MappingController@update_product_city_price_mapping');
+Route::post('insert-product-city-price-mapping','MappingController@insert_product_city_price_mapping');
+Route::get('get-product-unmapped-cities/{product_id}','MappingController@get_product_unmapped_cities');
+//Paritosh end
+
 });
 
 Route::get('/Basic-Report','ReportsController@basic_report');
