@@ -39,6 +39,8 @@
 		   <th>Agent Email</th>
 		   <th>Request Name</th>
 		   <th>Action</th>
+       <th>Comment</th>
+       <th>View Comments</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -53,7 +55,9 @@
 			<td>{{$val->ag_email}}</td>
 			<td><textarea readonly class="txtarea">{{$val->request_name}}</textarea></td>
 			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory({{$val->request_id}})">History</a>
+      <td><button class="btn btn-success reqcomm" value="{{$val->request_id}}" id="reqcomm" name="reqcomm">Comment</button>
 			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>
+      <td><button class="btn btn-info viewreqcomm" value="{{$val->request_id}}" id="viewreqcomm" name="viewreqcomm">View Comment</button></td>
 			
 		</tr>
 		@endforeach
@@ -134,6 +138,35 @@
       </div>
   </div>
 </div>
+
+<!-- ---------------------Comment---------------------------------- -->
+ <!-- Modal -->
+  <div class="modal fade" id="reqcomments" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+          <div class="row">
+            <div class="col-md-3">
+              <label>Comment</label>
+            </div>
+            <div class="col-md-9">
+              <input type="hidden" name="rcommid" id="rcommid" class="form-control" value="">
+              <input type="text" name="rcomment" id="rcomment" class="form-control" value="" required="">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="Commentsave" name="Commentsave" class="btn btn-success">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 <script src='{{ url('/javascripts/jquery.min.js') }}'></script>
@@ -219,5 +252,42 @@ function getsubdisposition(){
     }
 
    }
+</script>
+
+<script type="text/javascript">
+  $('.reqcomm').click(function(){
+    var reqid = $(this).val();
+    if(reqid != '' && reqid != null){
+        $('#reqcomments').modal('show');
+        $('#rcommid').val(reqid);
+    }else{
+      alert('failure');
+    }
+  });
+
+  $('#Commentsave').click(function(){
+   var req_id = $('#rcommid').val();
+   var req_comm = $('#rcomment').val();
+   if(req_comm == '' || req_comm == null){
+      alert("Please enter comment.");
+   }else{
+     $.ajax({
+        url:'save-comments-request/{req_id}/{req_comm}',
+        type:'get',
+        data: { req_id:req_id,req_comm:req_comm},
+        success:function(msg){
+          alert(msg[0].Message);
+          location.reload();
+        }
+     })
+    }
+  });
+</script>
+
+<script type="text/javascript">
+  $('#viewreqcomm').click(function(){
+   var v_req_id = $(this).val();
+   alert(v_req_id);
+  });
 </script>
 @endsection

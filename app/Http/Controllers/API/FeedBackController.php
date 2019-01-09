@@ -55,11 +55,30 @@ class FeedBackController extends NewInitialController
 
     public function saverate(Request $req){
         try{
-            $saverating = DB::select('call save_rating(?,?,?,?)',array($req->request_id,$req->userid,$req->feedback,$req->rating));
+            $saverating = DB::select('call save_rating(?,?,?,?)',array($req->request_id,$req->userid,$req->comment,$req->rating));
             if(count($saverating)>0){
                 return $this::send_success_response("Rating saved successfully","Success",$saverating);
             }else{
                 return $this::send_failure_response("Failed save rating","Failure",$saverating);
+            }
+        }catch(Exception $e){
+            return $this::send_failure_response($e->getMessage(),"failure",$e->getMessage());
+        }
+    }
+
+    public function displayrate(Request $req){
+        try{
+            if($req->userid == '' || $req->userid == null){
+                return $this::send_failure_response("Please enter user id","Failure",[]);
+            }else if($req->request_id == '' || $req->request_id == null){
+                return $this::send_failure_response("Please enter request id","Failure",[]);
+            }else{
+                $getrating = DB::select('call display_rate(?,?)',array($req->userid,$req->request_id));
+                if(count($getrating)>0){
+                    return $this::send_success_response("Rating get successfully","Success",$getrating);
+                }else{
+                    return $this::send_failure_response("Failed get rating","Failure",$getrating);
+                }
             }
         }catch(Exception $e){
             return $this::send_failure_response($e->getMessage(),"failure",$e->getMessage());
