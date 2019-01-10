@@ -253,6 +253,7 @@ function getsubdisposition(){
 
 <script type="text/javascript">
   $('.reqcomm').click(function(){
+    $('#Adminview').empty();
     var vreq_id = $(this).val();
     $('#reqcomments').modal('show');
     $('#rcommid').val(vreq_id);
@@ -285,12 +286,33 @@ function getsubdisposition(){
         type:'get',
         data: { req_id:req_id,req_comm:req_comm},
         success:function(msg){
-          alert(msg[0].Message);
-          location.reload();
+          chatdisplay();
+          $('#rcomment').val('');
         }
      })
     }
   });
+</script>
+
+<script type="text/javascript">
+  function chatdisplay(){
+       $('#Adminview').empty();
+       var vreq_id = $('#reqcomm').val();
+       $.ajax({
+        url:'view-comments-request/{vreq_id}',
+        type:'get',
+        data: { vreq_id:vreq_id},
+        success:function(msg){
+          $.each(msg,function(value){
+            if(msg[value].comments_by == 'Admin'){
+              $('#Adminview').append('<div class="container"><img src="images/icons/Admin.jpg" alt="Avatar" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-right">'+msg[value].created_date+'</span></div>');
+            }else{
+              $('#Adminview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-left">'+msg[value].created_date+'</span></div>');
+            }
+          })
+        }
+     })
+  }
 </script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('include-new.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

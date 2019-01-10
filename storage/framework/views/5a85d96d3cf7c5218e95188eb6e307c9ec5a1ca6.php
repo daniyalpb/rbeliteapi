@@ -26,6 +26,15 @@
               <span class="menu-title">CRM</span>
             </a>
           </li>
+
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="<?php echo e(url('/product-city-price-mapping')); ?>">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">CIty Price Mapping</span>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="<?php echo e(url('/category-list')); ?>">
               <i class="menu-icon mdi mdi-chart-line"></i>

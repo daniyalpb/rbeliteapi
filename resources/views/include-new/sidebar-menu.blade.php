@@ -44,6 +44,15 @@
               <span class="menu-title">CRM</span>
             </a>
           </li>
+
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{{ url('/product-city-price-mapping') }}">
+              <i class="menu-icon mdi mdi-backup-restore"></i>
+              <span class="menu-title">City Price Mapping</span>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/category-list') }}">
               <i class="menu-icon mdi mdi-chart-line"></i>
