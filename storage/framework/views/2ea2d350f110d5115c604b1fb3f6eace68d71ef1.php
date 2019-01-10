@@ -46,6 +46,22 @@
 					</div><br>
 
 					<div class="row">
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-2">
+							<label>Document Mandatory</label>
+						</div>
+						<div class="col-md-6">
+							<label class="radio-inline">
+						      <input type="radio" name="manradio" id="manradio" value="1" checked>Yes
+						    </label>
+						    <label class="radio-inline">
+						      <input type="radio" name="manradio" id="manradio" value="0">No
+						    </label>
+						</div>
+					</div><br>
+
+					<div class="row">
 						<div class="col-md-7">
 						</div>
 						<div class="col-md-5">

@@ -124,4 +124,4 @@ Route::get('elite-receipt/{id}','EliteReceiptController@pdf');
 
 Route::get('save-comments-request/{req_id}/{req_comm}','RequestCommentsController@savecommentsrequest1');
 
-Route::get('view-comments-request/{v_req_id}','RequestCommentsController@viewcommentsrequest');
+Route::get('view-comments-request/{vreq_id}','RequestCommentsController@viewcommentsrequest');

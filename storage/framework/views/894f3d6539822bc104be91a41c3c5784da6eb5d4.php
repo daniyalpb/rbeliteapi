@@ -38,6 +38,7 @@
 		   <th>Agent Email</th>
 		   <th>Request Name</th>
 		   <th>Action</th>
+       <th>Comment</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -52,7 +53,9 @@
 			<td><?php echo e($val->ag_email); ?></td>
 			<td><textarea readonly class="txtarea"><?php echo e($val->request_name); ?></textarea></td>
 			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory(<?php echo e($val->request_id); ?>)">History</a>
+      <td><button class="btn btn-success reqcomm" value="<?php echo e($val->request_id); ?>" id="reqcomm" name="reqcomm">Comment</button>
 			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>
+      
 			
 		</tr>
 		<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -134,6 +137,33 @@
       </div>
   </div>
 </div>
+
+<!-- ---------------------Comment---------------------------------- -->
+ <!-- Modal -->
+  <div class="modal fade" id="reqcomments" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Comment Messages</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="height: 250px; overflow-y: auto;">
+          <div id="Adminview">
+            
+          </div>
+          <form>
+        </div>
+        <div class="modal-footer">
+              <label style="margin: 7px;"><h4>Comment:</h4></label>
+              <input type="hidden" name="rcommid" id="rcommid" class="form-control" value="">
+              <input type="text" name="rcomment" id="rcomment" class="form-control" placeholder="Type a message..." required="">
+              <button type="button" id="Commentsave" name="Commentsave" class="btn btn-success">Save</button>
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button> -->
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 <script src='<?php echo e(url('/javascripts/jquery.min.js')); ?>'></script>
@@ -219,6 +249,48 @@ function getsubdisposition(){
     }
 
    }
+</script>
+
+<script type="text/javascript">
+  $('.reqcomm').click(function(){
+    var vreq_id = $(this).val();
+    $('#reqcomments').modal('show');
+    $('#rcommid').val(vreq_id);
+    var vreq_id = $(this).val();
+       $.ajax({
+        url:'view-comments-request/{vreq_id}',
+        type:'get',
+        data: { vreq_id:vreq_id},
+        success:function(msg){
+          $.each(msg,function(value){
+            if(msg[value].comments_by == 'Admin'){
+              $('#Adminview').append('<div class="container"><img src="images/icons/Admin.jpg" alt="Avatar" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-right">'+msg[value].created_date+'</span></div>');
+            }else{
+              $('#Adminview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-left">'+msg[value].created_date+'</span></div>');
+            }
+          })
+          //location.reload();
+        }
+     })
+  });
+
+  $('#Commentsave').click(function(){
+   var req_id = $('#rcommid').val();
+   var req_comm = $('#rcomment').val();
+   if(req_comm == '' || req_comm == null){
+      alert("Please enter comment.");
+   }else{
+     $.ajax({
+        url:'save-comments-request/{req_id}/{req_comm}',
+        type:'get',
+        data: { req_id:req_id,req_comm:req_comm},
+        success:function(msg){
+          alert(msg[0].Message);
+          location.reload();
+        }
+     })
+    }
+  });
 </script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('include-new.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

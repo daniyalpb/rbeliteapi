@@ -47,6 +47,7 @@ class RequestCommentsController extends InitialController
     }
 
     public function viewcommentsrequest(Request $req){
-        return $req->v_req_id;
+        $vgetcomment = DB::select('call get_request_comments(?)',array($req->vreq_id));
+        return $vgetcomment;
     }
 }

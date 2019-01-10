@@ -40,7 +40,6 @@
 		   <th>Request Name</th>
 		   <th>Action</th>
        <th>Comment</th>
-       <th>View Comments</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -57,7 +56,7 @@
 			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory({{$val->request_id}})">History</a>
       <td><button class="btn btn-success reqcomm" value="{{$val->request_id}}" id="reqcomm" name="reqcomm">Comment</button>
 			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>
-      <td><button class="btn btn-info viewreqcomm" value="{{$val->request_id}}" id="viewreqcomm" name="viewreqcomm">View Comment</button></td>
+      
 			
 		</tr>
 		@endforeach
@@ -145,23 +144,21 @@
     <div class="modal-dialog modal-md">
       <div class="modal-content">
         <div class="modal-header">
+          <h3>Comment Messages</h3>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
-        <div class="modal-body">
-          <form>
-          <div class="row">
-            <div class="col-md-3">
-              <label>Comment</label>
-            </div>
-            <div class="col-md-9">
-              <input type="hidden" name="rcommid" id="rcommid" class="form-control" value="">
-              <input type="text" name="rcomment" id="rcomment" class="form-control" value="" required="">
-            </div>
+        <div class="modal-body" style="height: 250px; overflow-y: auto;">
+          <div id="Adminview">
+            
           </div>
+          <form>
         </div>
         <div class="modal-footer">
-          <button type="button" id="Commentsave" name="Commentsave" class="btn btn-success">Submit</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button>
+              <label style="margin: 7px;"><h4>Comment:</h4></label>
+              <input type="hidden" name="rcommid" id="rcommid" class="form-control" value="">
+              <input type="text" name="rcomment" id="rcomment" class="form-control" placeholder="Type a message..." required="">
+              <button type="button" id="Commentsave" name="Commentsave" class="btn btn-success">Save</button>
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button> -->
         </div>
         </form>
       </div>
@@ -256,13 +253,25 @@ function getsubdisposition(){
 
 <script type="text/javascript">
   $('.reqcomm').click(function(){
-    var reqid = $(this).val();
-    if(reqid != '' && reqid != null){
-        $('#reqcomments').modal('show');
-        $('#rcommid').val(reqid);
-    }else{
-      alert('failure');
-    }
+    var vreq_id = $(this).val();
+    $('#reqcomments').modal('show');
+    $('#rcommid').val(vreq_id);
+    var vreq_id = $(this).val();
+       $.ajax({
+        url:'view-comments-request/{vreq_id}',
+        type:'get',
+        data: { vreq_id:vreq_id},
+        success:function(msg){
+          $.each(msg,function(value){
+            if(msg[value].comments_by == 'Admin'){
+              $('#Adminview').append('<div class="container"><img src="images/icons/Admin.jpg" alt="Avatar" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-right">'+msg[value].created_date+'</span></div>');
+            }else{
+              $('#Adminview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-left">'+msg[value].created_date+'</span></div>');
+            }
+          })
+          //location.reload();
+        }
+     })
   });
 
   $('#Commentsave').click(function(){
@@ -281,13 +290,6 @@ function getsubdisposition(){
         }
      })
     }
-  });
-</script>
-
-<script type="text/javascript">
-  $('#viewreqcomm').click(function(){
-   var v_req_id = $(this).val();
-   alert(v_req_id);
   });
 </script>
 @endsection
