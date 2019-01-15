@@ -41,7 +41,7 @@
             <li class="nav-item">
             <a class="nav-link" href="{{ url('/crm') }}">
               <i class="menu-icon mdi mdi-backup-restore"></i>
-              <span class="menu-title">CRM</span>
+              <span class="menu-title">Calling/Disposition</span>
             </a>
           </li>
 
