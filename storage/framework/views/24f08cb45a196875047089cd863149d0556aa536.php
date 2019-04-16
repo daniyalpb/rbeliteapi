@@ -5,44 +5,144 @@
 		<div class="card">
             <div class="card-body">
               <h4 class="card-title">Product List</h4>
-              <p><a href="product-add" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>&nbsp;Product</a></p>
+              
 		        <div class="overflow-scroll">
 					<div class="table-responsive">
-<table class="datatable-responsive table table-striped table-bordered dt-responsive nowrap" id="example">
-     <thead>
-      	<tr>
-	       <th>Name</th>
-	       <th>Category</th>
-	       <th>Sub Category</th>
-	       <th>Charges</th>
-	       <th>Agent Commision</th>
-	       <th>Documents Required</th>
-	       <th>Company Name</th>
-	       <th>Logo</th> 
-	    </tr>
-    </thead>
+						<table id="table_id" class="datatable-responsive table table-striped table-bordered dt-responsive nowrap">
+						     <thead>
+						      	<tr>
+							       <th><center>Name</center></th>
+							       <th>Category</th>
+							       <th>Logo</th> 
+							       <th>Action</th>
+							    </tr>
+						    </thead>
 
-    <tbody>
-       <?php $__currentLoopData = $product_master; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=> $val): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-        <tr>
-          <td><?php echo e($val->productname); ?></td>
-          <td><?php echo e($val->rtoname); ?></td>
-          <td><?php echo e($val->subcategory); ?></td>
-          <td><?php echo e($val->charges); ?></td>
-          <td><?php echo e($val->agent_commision); ?></td>
-          <td><?php echo e($val->required_field); ?></td>
-          <td><?php echo e($val->company_name); ?></td>
-          <td class="logo"><img src="<?php echo e(url('images/upload')); ?>/<?php echo e($val->product_logo); ?>" height="100" width="100"></td>	
-        </tr>
-        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-	</tbody>
-</table>
-
+						    <tbody>
+						       <?php $__currentLoopData = $product_master; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=> $val): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+						        <tr>
+						          <td><?php echo e($val->productname); ?></td>
+						          <td><?php echo e($val->rtoname); ?></td>
+						          <td class="logo"><img src="<?php echo e($val->product_logo); ?>" height="100" width="100"></td>
+						          <td><button type="button" class="btn btn-info btn-sm logoedit" id="logoedit" onclick="GetProductEdit(<?php echo e($val->id); ?>)">Edit</button></td>	
+						        </tr>
+						        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+							</tbody>
+						</table>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          	<style>
+			.error_class{color:red;}
+			</style>
+			    
+
+			<div class="row">
+				<div class="col-md-12 grid-margin">
+					<div class="card">
+			            <div class="card-body">
+			 				<form class="form-horizontal" method="post" action="<?php echo e(url('product-edit')); ?>" enctype="multipart/form-data"> 
+			 				<?php echo e(csrf_field()); ?>
+
+							    <div class="form-group">
+							        <label for="inputEmail" class="control-label col-xs-4">Change Product Name :</label>
+							        <div class="col-xs-8">
+							        	<input type="hidden" name="u_id" id="u_id">
+							        	<input type="hidden" name="u_cat_id" id="u_cat_id">
+							            <textarea rows="4" type="text" class="form-control" name="uname" id="uname" required="true"></textarea> 
+							        </div>
+							    </div>
+
+							     <div class="form-group">
+							        <label for="inputEmail" class="control-label col-xs-4">Logo :</label>
+							        <div class="col-xs-8" id="append_logo">
+							           <!-- <img src="<?php echo e($val->product_logo); ?>" height="100" width="100"> -->
+							        </div>
+							    </div>
+
+							    <div class="form-group">
+							        <label for="inputEmail" class="control-label col-xs-4">Change Logo :</label>
+							        <div class="col-xs-8">
+							            <input type="file" class="form-control"  name="logo"  onkeypress="return Numeric(event)"> 
+							        </div>
+							    </div>
+											    							    
+							    <div class="form-group">
+							    	<div class="col-xs-5">
+							           
+							        </div>
+
+							        <div class="col-xs-2">
+							            <input type="submit" class="btn btn-success" value="Update">
+							        </div>
+
+							        <div class="col-xs-1">
+							           
+							        </div>
+
+							        <div class="col-xs-2">
+							             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>   
+							        </div>
+							    </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+       <!--  <div class="modal-footer">
+         
+        </div> -->
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+<script src='<?php echo e(url('/javascripts/jquery.min.js')); ?>'></script>
+<script src='<?php echo e(url('/javascripts/bootstrap/jquery.dataTables.min.js')); ?>'></script>
+<script src='<?php echo e(url('/javascripts/bootstrap/dataTables.bootstrap.min.js')); ?>'></script>
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#table_id').DataTable({
+    	"ordering": false
+    });
+} );
+</script>
+
+<script type="text/javascript">
+function GetProductEdit(id){
+	$('#u_id').val("");
+	$('#u_cat_id').val("");
+	$('#uname').val("");
+	$("#append_logo").empty();
+	$.ajax({
+		type:'GET',
+		url:'get-product-edit/id',
+		dataType: 'JSON',
+		data:{id:id},
+		success: function(data){
+			$('#myModal').modal('show');
+			$('#u_id').val(data[0].id);
+			$('#u_cat_id').val(data[0].cat_id);
+			$('#uname').val(data[0].productname);
+			$('#append_logo').prepend('<img id="theImg" src="'+data[0].product_logo+'" height="100" width="100"/>')
+		}
+	});
+}
+</script>
 <?php $__env->stopSection(); ?>		
+
+
+
 <?php echo $__env->make('include-new.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

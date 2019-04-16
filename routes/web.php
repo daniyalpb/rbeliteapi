@@ -33,6 +33,8 @@ Route::get('product-list','ProductController@product_list');
 Route::get('product-add','ProductController@product_add');
 Route::get('product/category-id','ProductController@category_id');
 Route::POST('product-save','ProductController@product_save');
+Route::get('get-product-edit/{id}','ProductController@getproductedit');
+Route::POST('product-edit','ProductController@product_Edit');
 
 Route::get('category-list','ProductController@category_list');
 Route::POST('category-save','ProductController@categorysave');

@@ -124,4 +124,34 @@ class ProductController extends Controller{
    }
   }
 
+
+    public function getproductedit(Request $req){
+       $getdata = DB::select('call get_product_master_edit(?)',array($req->id));
+       return $getdata;
+    }
+
+
+    public function product_Edit(Request $req){
+      if(isset($req->logo)){
+          if($req->u_cat_id == '1'){
+              $destinationPath = public_path(). '/images/icons/RTO'; 
+              $logo = $req->file('logo');
+              $fileName = rand(1, 999) . $logo->getClientOriginalName();
+              $logo->move($destinationPath, $fileName);
+              $updatedata = DB::update('call update_product_master(?,?,?,?)',array($req->u_id,$req->u_cat_id,$req->uname,$fileName));  
+              return redirect('/product-list');
+          }else{
+              $destinationPath = public_path(). '/images/icons/Non-RTO'; 
+              $logo = $req->file('logo');
+              $fileName = rand(1, 999) . $logo->getClientOriginalName();
+              $logo->move($destinationPath, $fileName);
+              $updatedata = DB::update('call update_product_master(?,?,?,?)',array($req->u_id,$req->u_cat_id,$req->uname,$fileName));  
+              return redirect('/product-list');
+          }  
+      }else{
+        $updatedata = DB::update('call update_product_master(?,?,?,?)',array($req->u_id,null,$req->uname,null));
+        return redirect('/product-list');  
+      }
+    }
+
 }
