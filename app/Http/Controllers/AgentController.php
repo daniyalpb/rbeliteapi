@@ -110,7 +110,13 @@ class AgentController extends Controller{
 
   public function rto_list(){
     $rto=DB::select('call sp_rto_master()');
-    return view('dashboard.rto_list',['rto'=>$rto]);
+    $state_list=DB::select('call get_state_list()');
+    return view('dashboard.rto_list',['rto'=>$rto,'state_list'=>$state_list]);
+  }
+
+  public function GetCityDependsState(Request $req){
+      $city_list = DB::select('call get_city_list_depends_state(?)',array($req->sid));
+      return $city_list;
   }
 
   public function rto_save(Request $req){
@@ -121,6 +127,8 @@ class AgentController extends Controller{
                 [ 
                 'rto_location' => $req->rto_location, 
                 'series_no' =>$req->series_no,
+                'state_id' =>$req->state_id,
+                'city_id' =>$req->city_id,
                 'created_by'=>Session::get('id'),
                 'create_date'=>date('Y-m-d H:i:s'),
                 'is_active'=>0,

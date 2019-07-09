@@ -40,6 +40,7 @@
 		   <th>Request Name</th>
 		   <th>Action</th>
        <th>Comment</th>
+       <th>View Doc</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -56,6 +57,7 @@
           <td><textarea readonly class="txtarea">{{$val->request_name}}</textarea></td>
           <td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory({{$val->request_id}})">History</a>
           <td><button class="btn btn-success reqcomm" value="{{$val->request_id}}" id="reqcomm" name="reqcomm">Comment</button>
+          <td><button class="btn btn-success view_doc" value="{{$val->request_id}}" id="view_doc" name="view_doc">View Doc</button>
           <!-- <a class="btn btn-primary">Add new disspostion</a> --></td>
         </tr>
     @else
@@ -70,6 +72,7 @@
     			<td><textarea readonly class="txtarea">{{$val->request_name}}</textarea></td>
     			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory({{$val->request_id}})">History</a>
           <td><button class="btn btn-success reqcomm" value="{{$val->request_id}}" id="reqcomm" name="reqcomm">Comment</button>
+          <td><button class="btn btn-success view_doc" value="{{$val->request_id}}" id="view_doc" name="view_doc">View Doc</button>
     			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>	
     		</tr>
     @endif
@@ -338,5 +341,53 @@ function getsubdisposition(){
         }
      })
   }
+
+  $('.view_doc').click(function(){
+    var id = $(this).val();
+    $.ajax({
+      url:'get-doc-calling-disposition/{id}',
+      type:'get',
+      data:{id:id},
+      success:function(msgresponce){
+        if(msgresponce[0].type == 'pdf'){
+
+        }else{
+          $.each( msgresponce, function( key, value ) {
+            alert( key.id + ": " + value.docpath );
+          })
+        }
+      }
+    })
+
+  //   var ext = $(this).val().split('.').pop();
+  //   $('#ViewDocModel').modal('show');
+  //   $("#image").empty();
+  //   if($(this).val() == '0'){
+  //     $('#image').prepend('Document not available.');
+  //   }else if(ext != 'pdf'){
+  //     $('#image').prepend('<a href="'+$(this).val()+'" target="_blank"><img id="theImg" src="'+$(this).val()+'" width="268" height="130"/></a>');
+  //   }else{
+  //      $('#image').prepend('<a href="'+$(this).val()+'" target="_blank">PDF</a>');
+  //   }  
+   });
+
 </script>
+
+
+<!-- //---------------------view doc model------------------- -->
+  <div class="modal fade" id="ViewDocModel" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div id="image"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection

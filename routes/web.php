@@ -137,3 +137,6 @@ Route::get('elite-receipt/{id}','EliteReceiptController@pdf');
 Route::get('save-comments-request/{req_id}/{req_comm}','RequestCommentsController@savecommentsrequest1');
 
 Route::get('view-comments-request/{vreq_id}','RequestCommentsController@viewcommentsrequest');
+//------------today 25-05-2019---------------------
+Route::get('get-city-depends-state/{sid}','AgentController@GetCityDependsState');
+Route::get('get-doc-calling-disposition/{id}','CrmController@getdoccallingdisposition');

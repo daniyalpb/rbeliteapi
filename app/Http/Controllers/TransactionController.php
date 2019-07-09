@@ -123,7 +123,8 @@ class TransactionController extends InitialController{
             if(sizeof($data)>0){
                 return $this::send_success_response('Data loaded successfully' ,"Success",$data);
             }else{
-                return $this::send_failure_response("No order to show","failure",[]); 
+                return $this::send_success_response('No order to show' ,"Success",$data);
+                //return $this::send_failure_response("No order to show","failure",[]); 
             }
         } catch (Exception $e) {
             return $this::send_failure_response($e->getMessage(),"failure",[]); 

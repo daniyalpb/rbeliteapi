@@ -8,6 +8,7 @@
             <div class="card-body">
               <h4 class="card-title">RTO List</h4>
               <p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#rto-Modal"><span class="glyphicon glyphicon-plus"></span>RTO</a></p>
+              <br>
 		        <div class="overflow-scroll">
 					<div class="table-responsive">
 <table class="datatable-responsive table table-striped table-bordered dt-responsive nowrap" id="table_id">
@@ -15,6 +16,8 @@
 		<tr>
            <th>RTO location</th>
            <th>Series no</th>
+           <th>State</th>
+           <th>City</th>
 		</tr>
 	</thead>
 	<tbody>			               
@@ -22,6 +25,8 @@
 	       <tr>
 	       	<td>{{$val->rto_location}}</td>
 	        <td>{{$val->series_no}}</td>
+          <td>{{$val->state_name}}</td>
+          <td>{{$val->cityname}}</td>
 	       </tr>
        @endforeach			               
 	</tbody>
@@ -60,6 +65,29 @@
 		          <span id="rto_vali_series" class="help-inline"></span>
 		        </div>
 		    </div>
+
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">State</label>
+            <div class="col-xs-10">
+              <select type="text" id="state_id" name="state_id" class="form-control">
+                  <option selected disabled="true">-- Select State --</option>
+                  @foreach($state_list as $v)
+                    <option value="{{ $v->state_id }}">{{ $v->state_name }}</option>
+                  @endforeach
+              </select>
+              <span id="rto_vali_state" class="help-inline"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="inputEmail" class="control-label col-xs-2">City</label>
+            <div class="col-xs-10">
+              <select type="text" id="city_id" name="city_id" class="form-control">
+                  <option selected disabled="true">-- Select City --</option>
+              </select>
+              <span id="rto_vali_state" class="help-inline"></span>
+            </div>
+        </div>
 
              <div class="form-group">
 		        <label for="" class="control-label col-xs-2"></label>
@@ -103,6 +131,22 @@ $("#rto_add_id").click(function(event){
     }else{
         $('#rto_valid_id').text("Please fill out this form carefully...");
     }
+});
+
+$("#state_id").change(function(){
+  var sid = $(this).val();
+  $("#city_id option").remove();
+  $.ajax({
+      type:"get",
+      url:"get-city-depends-state/{sid}",
+      data:{sid:sid},
+      success:function(data){
+        $.each(data,function(index,value){
+          $('#city_id').append('<option value="'+value.city_id+'" selected="selected">'+value.cityname+'</option>');
+
+        })
+      }
+  })
 });
 </script>
 @endsection		

@@ -46,4 +46,9 @@ class CrmController extends Controller{
  	$data=DB::select("call closed_followup($reqid,$user_id)");
  	return json_encode($data);
  }
+
+ public function getdoccallingdisposition(Request $req){
+ 	$getdata = DB::select("call GetDocCommentCallingDisposition(?)",array($req->id));
+ 	return $getdata;
+ }
 }
