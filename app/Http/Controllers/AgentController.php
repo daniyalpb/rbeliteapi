@@ -28,8 +28,8 @@ class AgentController extends Controller{
         public function agent_save(Request $req){    
           $error=null;
           try{   
-   	         $val =Validator::make($req->all(), 
-   	         [
+             $val =Validator::make($req->all(), 
+             [
             'ag_name' => 'required',
             'ag_address' => 'required',
             'ag_contact_no' => 'required|regex:/^[0-9]{10}+$/',
@@ -50,7 +50,7 @@ class AgentController extends Controller{
                   $rto= DB::insert('call insert_tro_agent(?,?)',array($agentid,$n));
                 } 
               }          
-        	   $error=0; 	
+             $error=0;  
            } 
           }catch (Exception $e){
                $error=1;                 
@@ -129,7 +129,7 @@ public function GetCityDependsState(Request $req){
                 [ 
                 'rto_location' => $req->rto_location, 
                 'series_no' =>$req->series_no,
-		'state_id' =>$req->state_id,
+    'state_id' =>$req->state_id,
                 'city_id' =>$req->city_id,
                 'created_by'=>Session::get('id'),
                 'create_date'=>date('Y-m-d H:i:s'),
