@@ -5,8 +5,7 @@
 	<div class="col-md-12 grid-margin">
 		<div class="card">
             <div class="card-body">
-              <h4 class="card-title">Product List</h4>
-              
+              <h4 class="card-title">Product List</h4>             
 		        <div class="overflow-scroll">
 					<div class="table-responsive">
 						<table id="table_id" class="datatable-responsive table table-striped table-bordered dt-responsive nowrap">
@@ -115,7 +114,7 @@
 <script type="text/javascript">
 $(document).ready( function () {
     $('#table_id').DataTable({
-    	"ordering": false
+    	
     });
 } );
 </script>
@@ -142,5 +141,4 @@ function GetProductEdit(id){
 }
 </script>
 @endsection		
-
 

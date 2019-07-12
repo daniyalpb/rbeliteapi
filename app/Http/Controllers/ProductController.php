@@ -13,11 +13,12 @@ use Mail;
 
 class ProductController extends Controller{  
 
-  public function product_list(){
+public function product_list(){
     $product_master= DB::select('call sp_product_master()');
     // $product_master=DB::table('product_master')->get();
     return view('dashboard.product_list',['product_master'=>$product_master]);     
   }
+
 
   public function product_add(){   
     $query=DB::table('product_type_master')->select('id','name')->get();
@@ -123,9 +124,7 @@ class ProductController extends Controller{
       return  $status=1;
    }
   }
-
-
-    public function getproductedit(Request $req){
+public function getproductedit(Request $req){
        $getdata = DB::select('call get_product_master_edit(?)',array($req->id));
        return $getdata;
     }
@@ -153,5 +152,7 @@ class ProductController extends Controller{
         return redirect('/product-list');  
       }
     }
+
+
 
 }

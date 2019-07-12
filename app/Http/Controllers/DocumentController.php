@@ -120,7 +120,7 @@ class DocumentController extends CallApiController{
     		{
     			$devicetoken = DB::select('call get_device_token(?)',array($request_array['hidden_orderid']));
     			//print_r($devicetoken[0]->device_token); exit();
-    			$data='{"to":"'.$devicetoken[0]->device_token.'","notifyflag":"DR","imgurl":"http://i.stack.imgur.com/CE5lz.png","body":"Document rejected with flooding reason : '.$request_array['reject_reason'].'","title":"Document Rejected","notifyid":"0","isagentapp":"0","createdby":"'.$user.'","userid":"'.$user.'"}';
+    			$data='{"to":"'.$devicetoken[0]->device_token.'","notifyflag":"DR","imgurl":"http://www.rupeeboss.com/elite/img/elite-header.jpg","body":"Document rejected with flooding reason : '.$request_array['reject_reason'].'","title":"Document Rejected","notifyid":"0","isagentapp":"0","createdby":"'.$user.'","userid":"'.$user.'"}';
 				$type= "Content-Type:application/json";
 				//print_r($data); 
      			$result=$this->call_other_data_api('http://elite.rupeeboss.com/api/send-notification',$data,$type);

@@ -124,24 +124,25 @@
 					$('#docid').append('<option value="'+resdatanew[indexnew].doc_id+'">'+resdatanew[indexnew].document_name+'</option>');
 			    });
 			    $(':input[type="submit"]').prop('disabled', false);
+			    getmappingdoc();
 			}
 		})
 	});
 
-	$('.proid').change(function(){
-		var proid = $(this).val();
-		$.ajax({
-			url : 'get-mapping-doc-productwise/{proid}',
-			type : 'get',
-			data : { proid:proid },
-			success : function(resdata){
-				$("#docnameview tbody tr").remove();
-				$.each(resdata, function(index) {
-					$('#docnameview tbody').append('<tr><td>'+resdata[index].document_name+'</td><td><a href="'+resdata[index].documenturl+'" target="_blank">'+resdata[index].documenturl+'</td></a><td><button type="button" class="btn btn-link del" data-val="'+resdata[index].doc_id+'" value="'+resdata[index].product_id+'">Remove</button></td></tr>');
-			    });
-			}
-		})
-	});
+	// $('.proid').change(function(){
+	// 	var proid = $(this).val();
+	// 	$.ajax({
+	// 		url : 'get-mapping-doc-productwise/{proid}',
+	// 		type : 'get',
+	// 		data : { proid:proid },
+	// 		success : function(resdata){
+	// 			$("#docnameview tbody tr").remove();
+	// 			$.each(resdata, function(index) {
+	// 				$('#docnameview tbody').append('<tr><td>'+resdata[index].document_name+'</td><td><a href="'+resdata[index].documenturl+'" target="_blank">'+resdata[index].documenturl+'</td></a><td><button type="button" class="btn btn-link del" data-val="'+resdata[index].doc_id+'" value="'+resdata[index].product_id+'">Remove</button></td></tr>');
+	// 		    });
+	// 		}
+	// 	})
+	// });
 
 	$('.docid').change(function(){
 		$(':input[type="submit"]').prop('disabled', false);
@@ -158,11 +159,26 @@
 	     		data : { productid:productid, docid:docid },
 	     		success : function(msg){
 	     			alert('Document remove successfully.');
-	     			location.reload();
+	     			getmappingdoc();
 	     		}
 	     	})
 	    }
 	});
+
+	function getmappingdoc(){
+	var proid = $('.proid').val();
+	$.ajax({
+		url : 'get-mapping-doc-productwise/{proid}',
+		type : 'get',
+		data : { proid:proid },
+		success : function(resdata){
+			$("#docnameview tbody tr").remove();
+			$.each(resdata, function(index) {
+				$('#docnameview tbody').append('<tr><td>'+resdata[index].document_name+'</td><td><a href="'+resdata[index].documenturl+'" target="_blank">'+resdata[index].documenturl+'</td></a><td><button type="button" class="btn btn-link del" data-val="'+resdata[index].doc_id+'" value="'+resdata[index].product_id+'">Remove</button></td></tr>');
+			});
+		}
+	})
+};
 
 	$(document).ready(function(){
   		$("#myInput").on("keyup", function() {

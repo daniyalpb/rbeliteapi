@@ -53,6 +53,7 @@
             </a>
           </li>
 
+          
           <li class="nav-item">
             <a class="nav-link" href="{{ url('/category-list') }}">
               <i class="menu-icon mdi mdi-chart-line"></i>

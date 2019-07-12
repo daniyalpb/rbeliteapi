@@ -44,7 +44,7 @@
 	</thead>
 	<tbody>
 		@foreach($crmdata as $val)
-      @if($val->status == '3')
+    @if($val->status == '3')
         <tr style="background: lawngreen;">
           <td>{{$val->request_id}}</td>
           <td>{{$val->customer_name}}</td>
@@ -59,20 +59,20 @@
           <!-- <a class="btn btn-primary">Add new disspostion</a> --></td>
         </tr>
     @else
-    		<tr>
-    			<td><a onclick="getrequestid({{$val->request_id}});" href="#" data-toggle="modal" data-target="#myModal">{{$val->request_id}}</a></td>
-    			<td>{{$val->customer_name}}</td>
-    			<td>{{$val->customer_email}}</td>
-    			<td>{{$val->customer_no}}</td>
-    			<td>{{$val->ag_name}}</td>
-    			<td>{{$val->ag_contact_no}}</td>
-    			<td>{{$val->ag_email}}</td>
-    			<td><textarea readonly class="txtarea">{{$val->request_name}}</textarea></td>
-    			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory({{$val->request_id}})">History</a>
-          <td><button class="btn btn-success reqcomm" value="{{$val->request_id}}" id="reqcomm" name="reqcomm">Comment</button>
-    			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>	
-    		</tr>
-    @endif
+  		<tr>
+  			<td><a onclick="getrequestid({{$val->request_id}});" href="#" data-toggle="modal" data-target="#myModal">{{$val->request_id}}</a></td>
+  			<td>{{$val->customer_name}}</td>
+  			<td>{{$val->customer_email}}</td>
+  			<td>{{$val->customer_no}}</td>
+  			<td>{{$val->ag_name}}</td>
+  			<td>{{$val->ag_contact_no}}</td>
+  			<td>{{$val->ag_email}}</td>
+  			<td><textarea readonly class="txtarea">{{$val->request_name}}</textarea></td>
+  			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory({{$val->request_id}})">History</a>
+        <td><button class="btn btn-success reqcomm" value="{{$val->request_id}}" id="reqcomm" name="reqcomm">Comment</button>
+  			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>	
+		</tr>
+  @endif
 		@endforeach
 	</tbody>
 </table>
@@ -159,7 +159,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h3>Comment Messages</h3>
-          <button type="button" class="close" data-dismiss="modal"  onClick="window.location.reload()">&times;</button>
+          <button type="button" class="close" data-dismiss="modal" onClick="window.location.reload()">&times;</button>
         </div>
         <div class="modal-body" style="height: 250px; overflow-y: auto;">
           <div id="Adminview">
@@ -171,7 +171,7 @@
               <label style="margin: 7px;"><h4>Comment:</h4></label>
               <input type="hidden" name="rcommid" id="rcommid" class="form-control" value="">
               <input type="text" name="rcomment" id="rcomment" class="form-control" placeholder="Type a message..." required="">
-              <button type="button" id="Commentsave" name="Commentsave" class="btn btn-success">Send</button>
+              <button type="button" id="Commentsave" name="Commentsave" class="btn btn-success">Save</button>
               <!-- <button type="button" class="btn btn-default" data-dismiss="modal" onClick="window.location.reload()">Close</button> -->
         </div>
         </form>
@@ -186,7 +186,7 @@
 <script type="text/javascript">
 	$(document).ready( function(){
     $('#crm_table_id').DataTable({
-    	"ordering": false
+    	
     });
 
     $('input.txtchk').on('change', function() {
@@ -256,7 +256,7 @@ function getsubdisposition(){
              type: "GET",             
              success:function(data) 
              {                                 
-              //alert(data);
+             //alert(data);
              }
          });
 
@@ -283,12 +283,13 @@ function getsubdisposition(){
             }else{
               $('#Adminview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-left">'+msg[value].created_date+'</span></div>');
             }
-            if(msg[value].status=='3'){
+             if(msg[value].status=='3'){
               $('#Commentsave').attr("disabled", true);
             }else{
               $('#Commentsave').removeAttr("disabled");
             }
           })
+          //location.reload();
         }
      })
   });
@@ -305,9 +306,8 @@ function getsubdisposition(){
         data: { req_id:req_id,req_comm:req_comm},
         success:function(msg){
           location.reload();
-          // $('#reqcomments').modal('show');
-          // chatdisplay();
-          // $('#rcomment').val('');
+          //chatdisplay();
+          //$('#rcomment').val('');
         }
      })
     }
@@ -329,7 +329,7 @@ function getsubdisposition(){
             }else{
               $('#Adminview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-left">'+msg[value].created_date+'</span></div>');
             }
-            if(msg[value].status=='3'){
+             if(msg[value].status=='3'){
               $('#Commentsave').attr("disabled", true);
             }else{
               $('#Commentsave').removeAttr("disabled");

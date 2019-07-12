@@ -11,7 +11,7 @@
 		      </span>
 		    </div>
 		</div>
-          <div class="row">
+         <!-- <div class="row">
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 grid-margin stretch-card">
               <div class="card card-statistics">
                 <div class="card-body">
@@ -26,9 +26,7 @@
                       </div>
                     </div>
                   </div>
-                 <!--  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-alert-octagon mr-1" aria-hidden="true"></i> 65% lower growth
-                  </p> -->
+                 
                 </div>
               </div>
             </div>
@@ -46,9 +44,7 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-bookmark-outline mr-1" aria-hidden="true"></i> Product-wise sales
-                  </p> -->
+                  
                 </div>
               </div>
             </div>
@@ -66,9 +62,7 @@
                       </div>
                     </div>
                   </div>
-                 <!--  <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-calendar mr-1" aria-hidden="true"></i> Weekly Sales
-                  </p> -->
+               
                 </div>
               </div>
             </div>
@@ -86,13 +80,11 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <p class="text-muted mt-3 mb-0">
-                    <i class="mdi mdi-reload mr-1" aria-hidden="true"></i> Product-wise sales
-                  </p> -->
+                 
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="row">
            <!--  <div class="col-md-12 grid-margin">
               <div class="card">
@@ -118,7 +110,7 @@
               </div>
             </div> -->
           </div>
-          <div class="row">
+         <!-- <div class="row">
             <div class="col-lg-12 grid-margin">
               <div class="card">
                 <div class="card-body">
@@ -158,10 +150,7 @@
                           </td>
                           <td>
                            Learning Driving License 
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                            </div> -->
+                      
                           </td>
                           <td>
                             Ravi Shinde
@@ -183,10 +172,7 @@
                           </td>
                           <td>
                            Assistance in Driving License Renewal 
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                            </div> -->
+                         
                           </td>
                           <td>
                             Shital prasad
@@ -208,10 +194,7 @@
                           </td>
                           <td>
                            Duplicate Driving License 
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                            </div> -->
+                            
                           </td>
                           <td>
                             Avinash Bodkar
@@ -233,10 +216,7 @@
                           </td>
                           <td>
                            Duplicate Driving License 
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                            </div> -->
+                          
                           </td>
                           <td>
                             Avinash Bodkar
@@ -257,10 +237,7 @@
                           </td>
                           <td>
                            Duplicate Driving License 
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                            </div> -->
+                            
                           </td>
                           <td>
                             Avinash Bodkar
@@ -278,8 +255,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="row">
+          </div>-->
+        <!--   <div class="row">
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
@@ -416,6 +393,6 @@
                 </div>
               </div>
             </div>  
-            </div>     
+            </div>    -->  
 
 @endsection	    
