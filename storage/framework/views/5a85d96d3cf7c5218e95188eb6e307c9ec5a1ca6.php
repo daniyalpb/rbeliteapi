@@ -35,6 +35,7 @@
             </a>
           </li>
 
+          
           <li class="nav-item">
             <a class="nav-link" href="<?php echo e(url('/category-list')); ?>">
               <i class="menu-icon mdi mdi-chart-line"></i>
