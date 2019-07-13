@@ -140,3 +140,7 @@ Route::get('view-comments-request/{vreq_id}','RequestCommentsController@viewcomm
 //------------today 25-05-2019---------------------
 Route::get('get-city-depends-state/{sid}','AgentController@GetCityDependsState');
 Route::get('get-doc-calling-disposition/{id}','CrmController@getdoccallingdisposition');
+
+Route::get('cust-chat-count','CustomerChatAppController@custchatcount');
+Route::get('cust-chat-msg/{id}','CustomerChatAppController@custchatmsg');
+Route::get('comment-add', 'CustomerChatAppController@addComment');

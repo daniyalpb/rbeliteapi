@@ -40,6 +40,7 @@
 		   <th>Action</th>
        <th>Comment</th>
        <th>View Doc</th>
+       <th>Customer Chat</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -56,8 +57,8 @@
           <td><textarea readonly class="txtarea"><?php echo e($val->request_name); ?></textarea></td>
           <td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory(<?php echo e($val->request_id); ?>)">History</a>
           <td><button class="btn btn-success reqcomm" value="<?php echo e($val->request_id); ?>" id="reqcomm" name="reqcomm">Comment</button>
-          <td><button class="btn btn-success view_doc" value="<?php echo e($val->request_id); ?>" id="view_doc" name="view_doc">View Doc</button>
-          <!-- <a class="btn btn-primary">Add new disspostion</a> --></td>
+          <td><button class="btn btn-success view_doc" value="<?php echo e($val->request_id); ?>" id="view_doc" name="view_doc">View Doc</button></td>
+          <td><button class="btn btn-info cust_chat" value="<?php echo e($val->request_id); ?>" id="cust_chat_<?php echo e($val->request_id); ?>" name="cust_chat" onclick="customerchatmodel()">Customer Chat</button></td>
         </tr>
     <?php else: ?>
     		<tr>
@@ -71,8 +72,8 @@
     			<td><textarea readonly class="txtarea"><?php echo e($val->request_name); ?></textarea></td>
     			<td><a class="btn btn-default" data-toggle="modal" data-target="#historymodal" onclick="showhistory(<?php echo e($val->request_id); ?>)">History</a>
           <td><button class="btn btn-success reqcomm" value="<?php echo e($val->request_id); ?>" id="reqcomm" name="reqcomm">Comment</button>
-          <td><button class="btn btn-success view_doc" value="<?php echo e($val->request_id); ?>" id="view_doc" name="view_doc">View Doc</button>
-    			<!-- <a class="btn btn-primary">Add new disspostion</a> --></td>	
+          <td><button class="btn btn-success cust_chat" value="<?php echo e($val->request_id); ?>" id="view_doc" name="view_doc">View Doc</button></td>	
+          <td><button class="btn btn-info cust_chat" value="<?php echo e($val->request_id); ?>" id="cust_chat_<?php echo e($val->request_id); ?>" name="cust_chat" onclick="customerchatmodel()">Customer Chat</button></td>
     		</tr>
     <?php endif; ?>
 		<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
@@ -390,5 +391,104 @@ function getsubdisposition(){
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+    function CustomerChat(){
+       $.ajax({
+        url:'cust-chat-count',
+        type:'get',
+        data:{},
+        success:function(chatcount){
+           setTimeout(function(){
+            $.each( chatcount, function( key, value ) {
+               $("#cust_chat_"+value.req_id).html('Customer Msg ('+value.count+')');
+            })
+             CustomerChat(); 
+           }, 3000); 
+        }
+       })
+     }
+
+      $(document).ready(function(){
+        CustomerChat();
+      });
+
+      $('.cust_chat').click(function(){
+        var id = $(this).val();
+        $('#CustChat').modal('show'); 
+        $('#reqidadmin').val(id); 
+        $.ajax({
+          url:'cust-chat-msg/{id}',
+          type:'get',
+          data:{id:id},
+          success:handleData 
+        })
+      });
+
+      function customerchatdetails(id){
+        $.ajax({
+          url:'cust-chat-msg/{id}',
+          type:'get',
+          data:{id:id},
+          success:handleData 
+        })
+     }
+      
+     function handleData(msg) {
+        $('#Custview').empty();
+        $.each(msg,function(value){
+        if(msg[value].type == 'A'){
+          $('#Custview').append('<div class="container"><img src="images/icons/Admin.jpg" alt="Avatar" style="width:100%;"><p>'+msg[value].message+'</p><span class="time-right">'+msg[value].created_date_time+'</span></div>');
+          }else{
+            $('#Custview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].message+'</p><span class="time-left">'+msg[value].created_date_time+'</span></div>');
+          }
+        })
+        setTimeout(function(){
+          customerchatdetails(msg[0].req_id); 
+      }, 3000); 
+     }
+  </script>
+
+  <!-- ---------------------Customer Chat---------------------------------- -->
+ <!-- Modal -->
+  <div class="modal fade" id="CustChat" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Customer Messages</h3>
+          <button type="button" class="close" data-dismiss="modal" onClick="window.location.reload();">&times;</button>
+        </div>
+        <div class="modal-body" style="height: 250px; overflow-y: auto;">
+          <div id="Custview">
+            
+          </div>
+          <form id="commentsavecust" method="post">
+        </div>
+        <div class="modal-footer">
+              <label style="margin: 7px;"><h4>Comment:</h4></label>
+              <input type="hidden" name="reqidadmin" id="reqidadmin" class="form-control" value="">
+              <input type="text" name="admincomment" id="admincomment" class="form-control" placeholder="Type a message..." required="">
+              <button type="submit" id="admincommentsave" name="admincommentsave" class="btn btn-success">Send</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('#commentsavecust').on('submit', function(e) {
+       e.preventDefault(); 
+       $.ajax({
+           type: "get",
+           url: '<?php echo e(URL::to('comment-add')); ?>',
+           data:  $('#commentsavecust').serialize(),
+           success: function( msg ) {
+                $('#admincomment').val('');
+               customerchatdetails(msg[0].id); 
+           }
+       });
+   });
+  </script>
+
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('include-new.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
