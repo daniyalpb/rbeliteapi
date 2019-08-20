@@ -105,7 +105,8 @@ class ProductTypeController extends InitialController{
             if(count($query) > 0)
             	return $this::send_success_response('Records fetched successfully' ,"Success",$query);
             else
-        		return $this::send_failure_response("Invalid state ","failure",$query);
+                return $this::send_success_response('Records fetched successfully' ,"Success",$query);
+        		//return $this::send_failure_response("Invalid state ","failure",$query);
         }
         catch(Exception $e){
             return $this::send_failure_response($e->getMessage(),"failure",$e->getMessage());

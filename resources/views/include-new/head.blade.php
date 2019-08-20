@@ -5,6 +5,7 @@
   <title>ELITE</title>
 
   <link rel="stylesheet" type="text/css" href="{{ url('stylesheets/bootstrap.min.css') }}"> 
+  <link rel="stylesheet" type="text/css" href="{{ url('stylesheets/chat.css') }}"> 
   <link rel="stylesheet" type="text/css" href="{{ url('stylesheets/bootstrap/dataTables.bootstrap.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url('vendors/iconfonts/mdi/css/materialdesignicons.min.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url('vendors/css/vendor.bundle.base.css') }}">

@@ -33,6 +33,8 @@ Route::get('product-list','ProductController@product_list');
 Route::get('product-add','ProductController@product_add');
 Route::get('product/category-id','ProductController@category_id');
 Route::POST('product-save','ProductController@product_save');
+Route::get('get-product-edit/{id}','ProductController@getproductedit');
+Route::POST('product-edit','ProductController@product_Edit');
 
 Route::get('category-list','ProductController@category_list');
 Route::POST('category-save','ProductController@categorysave');
@@ -134,4 +136,11 @@ Route::get('elite-receipt/{id}','EliteReceiptController@pdf');
 
 Route::get('save-comments-request/{req_id}/{req_comm}','RequestCommentsController@savecommentsrequest1');
 
-Route::get('view-comments-request/{v_req_id}','RequestCommentsController@viewcommentsrequest');
+Route::get('view-comments-request/{vreq_id}','RequestCommentsController@viewcommentsrequest');
+//------------today 25-05-2019---------------------
+Route::get('get-city-depends-state/{sid}','AgentController@GetCityDependsState');
+Route::get('get-doc-calling-disposition/{id}','CrmController@getdoccallingdisposition');
+
+Route::get('cust-chat-count','CustomerChatAppController@custchatcount');
+Route::get('cust-chat-msg/{id}','CustomerChatAppController@custchatmsg');
+Route::get('comment-add', 'CustomerChatAppController@addComment');

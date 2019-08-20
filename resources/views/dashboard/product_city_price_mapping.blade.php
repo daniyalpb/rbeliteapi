@@ -90,7 +90,7 @@
 		<div class='row'>
 			<div class="col-lg-12">
 			    <div class="form-group">
-			        <label class="control-label col-xs-4">TAT = </label>
+			        <label class="control-label col-xs-4">TAT In Days = </label>
 			        <div class="col-xs-8">
 			          <span class="control-label help-inline">
 			          	<input type='text' name='update_tat' id="update_tat" class='form-control' onkeypress='onlyNumber(event);' placeholder="Enter TAT">
@@ -175,7 +175,7 @@
 		<div class='row'>
 			<div class="col-lg-12">
 			    <div class="form-group">
-			        <label class="control-label col-xs-4">TAT = </label>
+			        <label class="control-label col-xs-4">TAT In Days = </label>
 			        <div class="col-xs-8">
 			          <span class="control-label help-inline">
 			          	<input type='text' name='insert_tat' id="insert_tat" class='form-control' onkeypress='onlyNumber(event);' placeholder="Enter TAT">

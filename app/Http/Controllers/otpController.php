@@ -27,17 +27,34 @@ class otpController extends CallApiController
        $otp = mt_rand(100000, 999999);
       
             Session::put('temp_contact', $req['mobNo']);
-            // print_r(Session::get('temp_contact'));exit();
-            $post_data='{"mobNo":"'.$req->mobNo.'","msgData":"your otp is '.$otp.' - RupeeBoss.com - Elite",
-                        "source":"WEB"}';
-                        // print_r( $post_data);exit();
+
+
+
+$message =$otp." is the OTP to complete your elite app registartion - Team Elite";
+
+ $service_url = 'http://43.242.212.34/mspProducerM/sendSMS?user=rbeltt&pwd=rbeltt&sender=RBELIT&mobile='.$req->mobNo.'&msg='.urlencode($message).'&mt=0';
+                  //print_r($service_url);exit();
+                  $curl = curl_init($service_url);
+                  curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+                  curl_setopt($curl, CURLOPT_POST, false);
+                  curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+                  $curl_response = curl_exec($curl);
+                  curl_close($curl);
+      //$query = DB::select('call usp_insert_otp(?,?,?,?)',array($otp,$req->email,$req->mobNo,$req->ip));
+                  $query = DB::select('call usp_insert_otp(?,?,?,?,?)',array($otp,$req->email,$req->mobNo,$req->ip,$curl_response));
+      //print_r($query);
+      return $this::send_success_response('OTP Generated succesfully',"Success",(string)$otp);
+
+            
+          /*  $post_data='{"mobNo":"'.$req->mobNo.'","msgData":"'.$otp.' is the OTP to complete your elite app registartion - Team Elite",
+                        "source":"WEB"}';                      
             // $url = "http://beta.services.rupeeboss.com/LoginDtls.svc/xmlservice/sendSMS";
             $url = $this::$service_url_static."LoginDtls.svc/xmlservice/sendSMS";
             $result=$this->call_json_data_api($url,$post_data);
             $http_result=$result['http_result'];
             $error=$result['error'];
             $obj = json_decode($http_result);
-            //print_r($obj->status);
+            
 
 
       
@@ -51,7 +68,7 @@ class otpController extends CallApiController
     }
     else{
       return $this::send_failure_response("Error occured while sending OTP","failure","failure tested");
-    }
+    }*/
 
       
     }

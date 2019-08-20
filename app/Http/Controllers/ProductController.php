@@ -13,11 +13,12 @@ use Mail;
 
 class ProductController extends Controller{  
 
-  public function product_list(){
+public function product_list(){
     $product_master= DB::select('call sp_product_master()');
     // $product_master=DB::table('product_master')->get();
     return view('dashboard.product_list',['product_master'=>$product_master]);     
   }
+
 
   public function product_add(){   
     $query=DB::table('product_type_master')->select('id','name')->get();
@@ -123,5 +124,35 @@ class ProductController extends Controller{
       return  $status=1;
    }
   }
+public function getproductedit(Request $req){
+       $getdata = DB::select('call get_product_master_edit(?)',array($req->id));
+       return $getdata;
+    }
+
+
+    public function product_Edit(Request $req){
+      if(isset($req->logo)){
+          if($req->u_cat_id == '1'){
+              $destinationPath = public_path(). '/images/icons/RTO'; 
+              $logo = $req->file('logo');
+              $fileName = rand(1, 999) . $logo->getClientOriginalName();
+              $logo->move($destinationPath, $fileName);
+              $updatedata = DB::update('call update_product_master(?,?,?,?)',array($req->u_id,$req->u_cat_id,$req->uname,$fileName));  
+              return redirect('/product-list');
+          }else{
+              $destinationPath = public_path(). '/images/icons/Non-RTO'; 
+              $logo = $req->file('logo');
+              $fileName = rand(1, 999) . $logo->getClientOriginalName();
+              $logo->move($destinationPath, $fileName);
+              $updatedata = DB::update('call update_product_master(?,?,?,?)',array($req->u_id,$req->u_cat_id,$req->uname,$fileName));  
+              return redirect('/product-list');
+          }  
+      }else{
+        $updatedata = DB::update('call update_product_master(?,?,?,?)',array($req->u_id,null,$req->uname,null));
+        return redirect('/product-list');  
+      }
+    }
+
+
 
 }

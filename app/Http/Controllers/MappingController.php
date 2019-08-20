@@ -17,7 +17,7 @@ class MappingController extends Controller{
     }
 
     public function get_product_mapped_city_price($product_id){
-
+        $days = 'Days';
     	$result = DB::select('call get_product_mapped_city_price(?)' , array($product_id));
 
     	$table_data = '<table class="datatable-responsive table table-striped table-bordered dt-responsive nowrap" id="table_id">
@@ -40,7 +40,7 @@ class MappingController extends Controller{
 			<td>'.$val -> product_name.'</td>
 	       	<td>'.$val -> cityname.'</td>
 	        <td>'.$val -> price.'</td>
-	        <td>'.$val -> TAT.'</td>
+	        <td>'.$val -> TAT.' - '.$days.'</td>
 	        <td><a href="#" class="btn btn-primary" name="modify_'.$val -> id.'" id="modify_'.$val -> id.'" onclick="modify_price_tat('.$json_object.');" data-toggle="modal" data-target="#update_Modal">Modify</a></td>
 	       </tr>';
 		}

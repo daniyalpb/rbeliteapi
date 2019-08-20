@@ -16,6 +16,26 @@ class RelianceLoginController extends InitialController
 {
     public function Reliancelogin(Request $req){
     	try{
+
+$data = '[{
+                 "PolicyNumber": "110521823110005216",
+                 "ProductCode" : "2311",
+                 "RiskEndDate" : "21 Jan 2019",
+                 "RiskStartDate" : "22 Jan 2018",
+                 "InsuredName" : "RUDRAGOUDA S PATIL",
+                 "VehicleNumber" : "KA04ML6747",
+                 "Make" : "SKODA",
+                 "Model" : "RAPID",
+                 "PolicyStatus" : "Active",
+                 "ResponseStatus" : "Policy is eligible for ELITE services" 
+                }]';
+
+
+$json_data = json_decode($data, true);
+                return $this::send_success_response("Success","success",$json_data);
+exit();
+
+
     		if($req->PolicyNumber != null && $req->PolicyNumber != ''){
 
             $ch = curl_init();
@@ -85,18 +105,18 @@ class RelianceLoginController extends InitialController
     			// }';
 
 
-                $data = '{
-                    "PolicyNumber": "'.$PolicyNumber.'",
-                    "ProductCode" : "'.$ProductCode.'",
-                    "RiskEndDate" : "'.$RiskEndDate.'",
-                    "RiskStartDate" : "'.$RiskStartDate.'",
-                    "InsuredName" : "'.$InsuredName.'",
-                    "VehicleNumber" : "'.$VehicleNumber.'",
-                    "Make" : "'.$Make.'",
-                    "Model" : "'.$Model.'",
-                    "PolicyStatus" : "'.$PolicyStatus.'",
-                    "ResponseStatus" : "'.$ResponseStatus.'" 
-                }';
+                // $data = '{
+                //     "PolicyNumber": "'.$PolicyNumber.'",
+                //     "ProductCode" : "'.$ProductCode.'",
+                //     "RiskEndDate" : "'.$RiskEndDate.'",
+                //     "RiskStartDate" : "'.$RiskStartDate.'",
+                //     "InsuredName" : "'.$InsuredName.'",
+                //     "VehicleNumber" : "'.$VehicleNumber.'",
+                //     "Make" : "'.$Make.'",
+                //     "Model" : "'.$Model.'",
+                //     "PolicyStatus" : "'.$PolicyStatus.'",
+                //     "ResponseStatus" : "'.$ResponseStatus.'" 
+                // }';
 
                
 
