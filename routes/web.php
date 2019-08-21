@@ -94,6 +94,9 @@ Route::post('insert-product-city-price-mapping','MappingController@insert_produc
 Route::get('get-product-unmapped-cities/{product_id}','MappingController@get_product_unmapped_cities');
 //Paritosh end
 
+Route::get('/feedback-report','ReportsController@feedback_report');
+Route::post('/load-feedback-comments','ReportsController@load_feedback_comments');
+
 });
 
 Route::get('/Basic-Report','ReportsController@basic_report');
