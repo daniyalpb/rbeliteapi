@@ -220,7 +220,21 @@ $message =$otp." is the OTP to complete your elite app registartion - Team Elite
      
 
     }
+    
+ public function otp_details(Request $req){
+ 
+  return view('dashboard.otp-details');
+ 
 
 }
 
-?>
+public function get_otp_details($txtfromdate, $txttodate){
+ $query=DB::select('call sp_load_otp_details(?,?)',array($txtfromdate,$txttodate));
+  //return view('dashboard.otp-details',['querty'=>$querty]);
+ 
+return json_encode ($query);
+}
+
+}
+
+
