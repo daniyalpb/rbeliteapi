@@ -144,3 +144,8 @@ Route::get('get-doc-calling-disposition/{id}','CrmController@getdoccallingdispos
 Route::get('cust-chat-count','CustomerChatAppController@custchatcount');
 Route::get('cust-chat-msg/{id}','CustomerChatAppController@custchatmsg');
 Route::get('comment-add', 'CustomerChatAppController@addComment');
+
+Route::get('otp-details','otpController@otp_details');
+
+Route::get('get-otp-details/{txtfromdate}/{txttodate}','otpController@get_otp_details');
+
