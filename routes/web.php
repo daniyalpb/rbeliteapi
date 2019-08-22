@@ -75,6 +75,12 @@ Route::get('/show-uploaded-docs','DocumentController@show_uploaded_docs');
 Route::get('/update-docstatus','DocumentController@update_docstatus');
 
 
+//Avinash start
+Route::get('otp-details','otpController@otp_details');
+Route::get('get-otp-details/{txtfromdate}/{txttodate}','otpController@get_otp_details');
+//Avinash end
+
+
 
 //shubham start//
 Route::get('crm','CrmController@getcrm');
@@ -93,6 +99,9 @@ Route::post('update-product-city-price-mapping','MappingController@update_produc
 Route::post('insert-product-city-price-mapping','MappingController@insert_product_city_price_mapping');
 Route::get('get-product-unmapped-cities/{product_id}','MappingController@get_product_unmapped_cities');
 //Paritosh end
+
+Route::get('/feedback-report','ReportsController@feedback_report');
+Route::post('/load-feedback-comments','ReportsController@load_feedback_comments');
 
 });
 

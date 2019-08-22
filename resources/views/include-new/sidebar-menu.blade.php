@@ -110,11 +110,14 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a class="nav-link" href="{{ url('/Payment-Report') }}">Payment Report</a>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                   <a class="nav-link" href="{{ url('/Basic-Report') }}">Basic Report</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url('/feedback-report') }}">Feedback Report</a>
                 </li>
               </ul>
             </div>
