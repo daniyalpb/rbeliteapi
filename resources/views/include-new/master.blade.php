@@ -28,5 +28,9 @@
   <!-- container-scroller ends -->
 
 </body>
-@include('include-new.js')
+
+
+ @include('include-new.script')
+ @include('include-new.ajscript')
+ @include('include-new.js')
 </html>

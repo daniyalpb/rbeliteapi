@@ -1,4 +1,5 @@
 @extends('include-new.master')
+
 @section('content')
 <div class="container-fluid white-bg">
  <div class="col-md-12"><h3 class="mrg-btm">OTP Details</h3></div>
@@ -9,8 +10,8 @@
       <div class="form-group"> 
          <label>From Date</label>
          <div id="datepicker" class="input-group getDate" data-date-format="yyyy-mm-dd">
-               <input class="form-control date-range-filter" type="text" placeholder="From Date" name="txtfromdate" id="txtfromdate" required  value="<?php echo date("Y-m-d")?>">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+               <input class="form-control date-range-filter" type="date" placeholder="From Date" name="txtfromdate" id="txtfromdate" required  value="<?php echo date("Y-m-d")?>">
+      <!--     <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span> -->
          </div>
       </div>
    </div>
@@ -23,10 +24,10 @@
       <div class="form-group">
         <label>To Date</label>
         <div id="datepicker1" class="input-group getDate" data-date-format="yyyy-mm-dd">
-             <input class="form-control date-range-filter" type="text" placeholder="To Date"  name="txttodate"  id="txttodate" required value="<?php $datetime = new DateTime('tomorrow');
+             <input class="form-control date-range-filter" type="date" placeholder="To Date"  name="txttodate"  id="txttodate" required value="<?php $datetime = new DateTime('tomorrow');
 echo $datetime->format('Y-m-d'); ?>">
- <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-        </div>
+<!--  <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+ -->        </div>
       </div>
   </div>
 
@@ -47,12 +48,7 @@ echo $datetime->format('Y-m-d'); ?>">
 </div>
 </div>
 
- <link rel="stylesheet" type="text/css" src="{{url('stylesheets/datepicker.css')}}" />
 
-
-<script type="text/javascript" src="http://localhost:8000/javascripts/jquery.min.js"></script>
-
-<script type="text/javascript" src="{{url('javascripts/css.min.js')}}"></script>
 
 
 
