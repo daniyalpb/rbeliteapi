@@ -144,3 +144,23 @@ Route::get('get-doc-calling-disposition/{id}','CrmController@getdoccallingdispos
 Route::get('cust-chat-count','CustomerChatAppController@custchatcount');
 Route::get('cust-chat-msg/{id}','CustomerChatAppController@custchatmsg');
 Route::get('comment-add', 'CustomerChatAppController@addComment');
+// -----------------------------------Vikas Start----------------------------------------------
+// -------------------------------------Agent Chat start----------------------------------------
+Route::get('agent-chat-count','AgentChatAppController@agentchatcount');
+Route::get('agent-chat-msg/{id}','AgentChatAppController@agentchatmsg');
+Route::get('comment-add-agent', 'AgentChatAppController@addCommentagent');
+// ---------------------------------agent chat end----------------------------------------------
+Route::get('get-count-comment','DashboardController@comments_count');
+Route::get('view-coment','DashboardController@view_comment');
+Route::get('is-view-comment','DashboardController@update_is_view');
+
+Route::get('add-employee','Add_employee_Controller@add_elite_employee');
+Route::get('new_emp_add','Add_employee_Controller@get_emp_data');
+Route::post('add-new-emp_elite','Add_employee_Controller@new_emp_add_elite');
+Route::get('all_emp_data','Add_employee_Controller@all_emp_data');
+Route::get('update_employee/{user_id}','Add_employee_Controller@get_update_employee_details'); 
+Route::post('update_emp_details','Add_employee_Controller@update_emp_details'); 
+
+
+
+

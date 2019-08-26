@@ -43,6 +43,8 @@
 
        <th>View Doc</th>
        <th>Customer Chat</th>
+<!--        <th>Agent Chat</th>
+ -->
 		</tr>
 	</thead>
 	<tbody>
@@ -458,6 +460,133 @@ function getsubdisposition(){
            success: function( msg ) {
                 $('#admincomment').val('');
                customerchatdetails(msg[0].id); 
+           }
+       });
+   });
+  </script>
+                        <!-- Agent Chat Vikas -->
+
+
+  <div class="modal fade" id="AgentChat" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Ajent Messages</h3>
+          <button type="button" class="close" data-dismiss="modal" onClick="window.location.reload();">&times;</button>
+        </div>
+        <div class="modal-body" style="height: 250px; overflow-y: auto;">
+          <div id="Ajentview">
+            
+          </div>
+          <form id="commentsaveagant" method="get">
+
+        </div>
+        <div class="modal-footer">
+              <label style="margin: 7px;"><h4>Comment:</h4></label>
+              <input type="hidden" name="reqidadminagnt" id="reqidadminagnt" class="form-control" value="">
+              <input type="text" name="admincommentagnt" id="admincommentagnt" class="form-control" placeholder="Type a message..." required="">
+              <button type="submit" id="admincommentsaveagant" name="admincommentsaveagant" class="btn btn-success">Send</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+<script type="text/javascript">
+  function agentchatdisplay(){
+       $('#Adminviewagent').empty();
+       var vreq_id = $('#reqcommagent').val();
+       $.ajax({
+        url:'view-comments-request/{vreq_id}',
+        type:'get',
+        data: { vreq_id:vreq_id},
+        success:function(msg){
+          $.each(msg,function(value){
+            if(msg[value].comments_by == 'Admin'){
+              $('#Adminviewagent').append('<div class="container"><img src="images/icons/Admin.jpg" alt="Avatar" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-right">'+msg[value].created_date+'</span></div>');
+            }else{
+              $('#Adminviewagent').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].comments+'</p><span class="time-left">'+msg[value].created_date+'</span></div>');
+            }
+            //  if(msg[value].status=='3'){
+            //   $('#commentsaveagant').attr("disabled", true);
+            // }else{
+            //   $('#commentsaveagant').removeAttr("disabled");
+            // }
+          })
+        }
+     })
+  }
+</script>
+
+<script type="text/javascript">
+    function AgentChat(){
+       $.ajax({
+        url:'agent-chat-count',
+        type:'get',
+        data:{},
+        success:function(chatcount){
+           setTimeout(function(){
+            $.each( chatcount, function( key, value ) {
+               $("#agent_chat"+value.req_id).html('Agent Msg ('+value.count+')');
+            })
+             AgentChat(); 
+           }, 3000); 
+        }
+       })
+     }
+
+      $(document).ready(function(){
+        AgentChat();
+      });
+
+      $('.agent_chat').click(function(){
+        var id = $(this).val();
+        $('#AgentChat').modal('show'); 
+        $('#reqidadminagnt').val(id); 
+        $.ajax({
+          url:'agent-chat-msg/{id}',
+          type:'get',
+          data:{id:id},
+          success:handleDataagent 
+        })
+      });
+
+      function agentchatdetails(id){
+        $.ajax({
+          url:'agent-chat-msg/{id}',
+          type:'get',
+          data:{id:id},
+          success:handleDataagent 
+        })
+     }
+      
+     function handleDataagent(msg) {
+        $('#Ajentview').empty();
+        $.each(msg,function(value){
+        if(msg[value].type == 'A'){
+          $('#Ajentview').append('<div class="container"><img src="images/icons/Admin.jpg" alt="Avatar" style="width:100%;"><p>'+msg[value].message+'</p><span class="time-right">'+msg[value].created_date_time+'</span></div>');
+          }else{
+            $('#Ajentview').append('<div class="container darker"><img src="images/icons/Agent.jpg" alt="Avatar" class="right" style="width:100%;"><p>'+msg[value].message+'</p><span class="time-left">'+msg[value].created_date_time+'</span></div>');
+          }
+        })
+        setTimeout(function(){
+          agentchatdetails(msg[0].req_id); 
+      }, 30000); 
+     }
+  </script>
+<script type="text/javascript">
+    $('#commentsaveagant').on('submit', function(e) {
+       e.preventDefault(); 
+       $.ajax({
+           type: "get",
+           url: '{{URL::to('comment-add-agent')}}',
+           data:  $('#commentsaveagant').serialize(),
+           success: function( msg ) {
+                $('#admincommentagnt').val('');
+               agentchatdetails(msg[0].id); 
            }
        });
    });
