@@ -27,4 +27,16 @@ class ReportsController extends Controller{
         $data = DB::select('call Get_All_Sales_Master_Extra_Data(?)',array($orderid));
         return view('Reports.View_Details',['data'=>$data]);
     }
+
+    public function feedback_report(){
+        $data = DB::select('call feedback_report()');
+        return view('Reports.feedback_report',['data'=>$data]);
+    }
+
+    public function load_feedback_comments(Request $request){
+
+        $result = DB::select('call feedback_report_comments(?)' , array($request->get('request_id')));
+        echo json_encode($result);
+    }
+
 }
