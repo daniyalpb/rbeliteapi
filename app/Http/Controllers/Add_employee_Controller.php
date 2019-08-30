@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use DB;
 use Response;
@@ -10,7 +9,7 @@ use Redirect;
 use Session;
 use URL;
 use Mail;
-use App\library\Pagination ;
+use App\library\Pagination;
 
 class Add_employee_Controller extends Controller{
 	public function add_elite_employee(){
@@ -22,7 +21,7 @@ class Add_employee_Controller extends Controller{
 
 		public function get_emp_data(Request $req){ 
          $data = DB::select("call get_elite_emp_data(?)",array($req->id));
-         print_r($data);exit();
+         //print_r($data);exit();
           return response()->json($data);
    }  
 
@@ -31,17 +30,24 @@ public function new_emp_add_elite(Request $req){
 	             // print_r($req->all);exit();
 
     $user_id=Session::get('user_id');
-    DB::select('call usp_insert_elite_emp(?,?,?,?,?,?)',array(
+   $data= DB::select('call usp_insert_elite_emp(?,?,?,?,?,?,?)',array(
       $req->txtuserid,  
       $req->txtname,  
       $req->txtofcmail,    
       $req->txtprofile, 
       $req->txtstatus,
       $user_id,
+      $user_id,
 
 ));
-    // Session::flash('message', 'Record Insert Successfully');
-    return redirect('all_emp_data');
+   		 $msg=$data[0]->Message;
+		 // print_r($msg);exit();
+			Session::flash('msg', $msg);
+            return redirect('all_emp_data');
+                        // return redirect('all_emp_data')->with(Session::get('msg')); 
+ 
+
+
   } 
 
 
@@ -58,16 +64,19 @@ public function new_emp_add_elite(Request $req){
 
    public function update_emp_details(Request $req){
 //print_r($req->all());exit();
-   DB::select('call usp_update_emp_details(?,?,?,?,?,?)',array(
+   	    $user_id=Session::get('user_id');
+   $data=DB::select('call usp_update_elite_emp(?,?,?,?,?,?)',array(
    	  $req->txtuserid,  
       $req->txtname,  
       $req->txtofcmail,    
       $req->txtprofile, 
       $req->txtstatus,
       $user_id,
-
   ));
-    return redirect('all_emp_data');
+   			$msg=$data[0]->Message;
+			Session::flash('msg', $msg);
+            return redirect('all_emp_data');
+    //return redirect('all_emp_data');
  }
   
 }
