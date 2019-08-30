@@ -159,8 +159,8 @@ Route::get('agent-chat-count','AgentChatAppController@agentchatcount');
 Route::get('agent-chat-msg/{id}','AgentChatAppController@agentchatmsg');
 Route::get('comment-add-agent', 'AgentChatAppController@addCommentagent');
 // ---------------------------------agent chat end----------------------------------------------
-Route::get('get-count-comment','DashboardController@comments_count');
-Route::get('view-coment','DashboardController@view_comment');
+Route::get('get-notifications-count','DashboardController@notifications_count');
+Route::get('update-is-viewed-notifications','DashboardController@update_is_viewed_notifications');
 Route::get('is-view-comment','DashboardController@update_is_view');
 
 Route::get('add-employee','Add_employee_Controller@add_elite_employee');

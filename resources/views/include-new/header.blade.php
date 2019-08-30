@@ -82,37 +82,19 @@
           </li>--}}
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-              <i class="mdi mdi-bell"></i>
-              
-<!--             <span id="divcnt" class="count" onclick="newupdateamt()"></span>
- -->              
-             <span id="divcnt" class="count"></span>
-             <span id="notify"></span>
-
+              <i class="mdi mdi-bell"></i>          
+              <span id="notifications_count" class="count"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-              <a class="dropdown-item">
-
-                <p class="mb-0 font-weight-normal float-left">You have <span id="divcntnew" class="countday"></span> new notifications
-                </p>
+              {{-- <a class="dropdown-item">
                 <a href="view-coment" id="viewcomment" name="viewcomment" class="badge badge-pill badge-warning float-right">View all</a>
-              </a>
+              </a> --}}
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="mdi mdi-alert-circle-outline mx-0"></i>
-                  </div>
-                </div>
 
+              <div id='notification_details'>
+                
 
-                <div class="preview-item-content">
-                  <a onclick="empty_count();" data-toggle="modal" data-target="#Quotedescription"> <h6 class="preview-subject font-weight-medium text-dark" >View User Comment</h6></a>
-                  <p class="font-weight-light small-text">
-                    Just now 
-                    </a>
-                  </p> 
-                </div>
+              </div>
               
               <div class="dropdown-divider"></div>
               <a class="dropdown-item preview-item">
@@ -184,100 +166,51 @@
 <!-- header navbar ends -->
 
 
-<!-- QUOTES STATUS VIEW MODEL STATRT -->
-
-<div class="modal" id="Quotedescription">
-  <div class="modal-dialog modal-lg modal_extra_width">
-    <div class="modal-content">      
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">User Comments</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>        
-      <!-- Modal body -->
-      <div class="modal-body">
-
-       <div class="table"></div>
-       <div id="loadproduct"> </div>
-       <!--            <span id="txtdiscription"></span>  -->
-       <textarea id="txtdiscription" readonly class="form-control" style="height: 218px;"></textarea>              
-     </div>      
-     <!-- Modal footer -->
-     <div class="modal-footer">
-       <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button> 
-     </div>
-   </div>
-
-
- </div>
-</div>
-
-<!-- QUOTES STATUS VIEW MODEL END -->
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ url('javascripts/jquery.min.js') }}"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
-
-    $.ajax({     
-    // url: "{{URL::to('get-count-comment')}}",
-      url: 'get-count-comment',
-      method:"get",
-      success: function(msg)  
-         {
-      var data = (JSON.parse(msg));
-
-      $("#divcnt").text(data[0].comments);
-      $("#divcntnew").text(data[0].comments);
-
-      $("#txtdiscription").text(data[0].mssg);
+  get_notifications_count();
+}); 
 
 
+$("#notificationDropdown").on('click' , function(){
+  get_notifications_details();
+});
+
+
+function get_notifications_count(){
+  $("#notifications_count").empty();
+  $.ajax({     
+    url: "{{URL::to('get-notifications-count')}}",
+    method:"get",
+    success: function(response){
+    var data = JSON.parse(response);
+      $("#notifications_count").text(data[0].notifications_count);
+    }
+  });
+} 
+
+
+function get_notifications_details(){
+
+  $("#notification_details").html();
+
+  $.ajax({     
+    url: "{{URL::to('update-is-viewed-notifications')}}",
+    method:"get",
+    success: function(response){
+      var data = JSON.parse(response);
+      $("#notifications_count").text(0);
+
+      var notifications_details = '';
+
+      $.each( data , function(key , value){
+        notifications_details += '<a class="dropdown-item preview-item"> <div class="preview-thumbnail" style="cursor:pointer;color:black !important;"> Order Id : ' + value.orderid + ' created. </div> <div class="preview-item-content"> <h6 class="preview-subject font-weight-medium text-dark" ></h6> <p class="font-weight-light small-text"></p> </div> </a> <div class="dropdown-divider"> </div>'; });
+
+      $("#notification_details").html(notifications_details);
       }
-     });
-   }); 
-
-    </script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    // function view_comment_new(request_id){ 
-
-    $.ajax({     
-    url: "{{URL::to('view-coment')}}",
-      // url: 'getcomment/'+request_id,
-      method:"get",
-      success: function(msg)  
-         {
-      var data = (JSON.parse(msg));
-
-      }
-     });
-   }); 
-    </script>
-<script type="text/javascript">
-function empty_count(){
-  alert("test");
-  $.ajax({ 
-       url: "{{URL::to('is-view-comment')}}",
-       method:"get",
-       success: function(msg){
-        var data = (JSON.parse(msg));
-        if (data.length!='1') {
-          $("#Quotedescription").modal('show');
-        }else{
-          alert('There is nothing to Comment');
-          $("#Quotedescription").modal('hide');
-        }
-        
-        
-      console.log(msg);
-   // window.location.reload(true);
-
-   }
- 
-   });
+  });
 }
-
 </script>
+
