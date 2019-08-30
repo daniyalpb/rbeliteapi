@@ -28,19 +28,9 @@ class DashboardController extends InitialController{
         return json_encode($data);
       }
 
-      public function view_comment(){
-       // print_r($req->all);exit();
-       $userid=Session::get('id');
-       $query= DB::select('call user_comment_view(?)',array($userid));
-       //return json_encode($query);
-       return view('dashboard.user_comment_view',['query'=>$query]);
-      }
+      public function update_is_read_notifications(Request $request){
 
-
-      public function update_is_view(Request $req){                
-        $useridisview=Session::get('id');
-        $isview =DB::select('call update_comment_is_view(?)',array($useridisview));
-        return json_encode($isview);
+        $userid = Session::get('id');
+        DB::select('call update_is_read_notifications(?,?)' , array($request->get('admin_notificationId') , $userid) );
       }
-  
 }

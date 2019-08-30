@@ -1,11 +1,16 @@
+<style>
+.Read{background-color:#ffffff;}
+.Unread{background-color:#a3a3c2;}
+</style>
+
 <!-- header navbar starts -->
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
         <a class="navbar-brand brand-logo" href="{{ url('/dashboard') }}">
-          <img src="images/elite-sm.png" alt="logo" />
+          <img src="{{ url('images/elite-sm.png') }}" alt="logo" />
         </a>
         <a class="navbar-brand brand-logo-mini" href="index.html">
-          <img src="images/logo-mini.svg" alt="logo" />
+          <img src="{{ url('images/logo-mini.svg') }}" alt="logo" />
         </a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
@@ -133,7 +138,7 @@
 
 
 
-              <img class="img-xs rounded-circle" src="images/faces/face1.jpg" alt="Profile image">
+              <img class="img-xs rounded-circle" src="{{ url('images/faces/face1.jpg') }}" alt="Profile image">
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <a class="dropdown-item p-0">
@@ -206,11 +211,35 @@ function get_notifications_details(){
       var notifications_details = '';
 
       $.each( data , function(key , value){
-        notifications_details += '<a class="dropdown-item preview-item"> <div class="preview-thumbnail" style="cursor:pointer;color:black !important;"> Order Id : ' + value.orderid + ' created. </div> <div class="preview-item-content"> <h6 class="preview-subject font-weight-medium text-dark" ></h6> <p class="font-weight-light small-text"></p> </div> </a> <div class="dropdown-divider"> </div>'; });
+        notifications_details += '<a class="dropdown-item preview-item '+ value.is_read +'" id="a_each_notification_'+ value.admin_notif_id +'" data-order_id="'+value.orderid+'" data-is_read="'+ value.is_read +'" data-admin_notificationId="'+value.admin_notif_id+'" onclick="mark_notification_read(this.id)"> <div class="preview-thumbnail" style="cursor:pointer;color:black !important;"> Order Id : ' + value.orderid + ' created. </div> <div class="preview-item-content"> <h6 class="preview-subject font-weight-medium text-dark" ></h6> <p class="font-weight-light small-text"></p> </div> </a> <div class="dropdown-divider"> </div>'; });
 
       $("#notification_details").html(notifications_details);
       }
   });
 }
+
+
+function mark_notification_read(this_id){
+
+  event.preventDefault();
+  var order_id = $("#" + this_id).attr('data-order_id');
+  var is_read = $("#" + this_id).attr('data-is_read');
+  var admin_notificationId = $("#" + this_id).attr('data-admin_notificationId');
+
+  $.ajax({     
+    url: "{{URL::to('update-is-read-notifications')}}",
+    method:"POST",
+    data : { '_token' : '{{ csrf_token() }}' , 'admin_notificationId': admin_notificationId },
+    success: function(response){
+      $("#a_each_notification_" + admin_notificationId).removeClass('Unread');
+      $("#a_each_notification_" + admin_notificationId).addClass('Read');
+    }
+  });
+
+}
+
+setInterval(function(){ 
+  get_notifications_count();
+}, 15000);
 </script>
 

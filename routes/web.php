@@ -161,7 +161,8 @@ Route::get('comment-add-agent', 'AgentChatAppController@addCommentagent');
 // ---------------------------------agent chat end----------------------------------------------
 Route::get('get-notifications-count','DashboardController@notifications_count');
 Route::get('update-is-viewed-notifications','DashboardController@update_is_viewed_notifications');
-Route::get('is-view-comment','DashboardController@update_is_view');
+Route::post('update-is-read-notifications','DashboardController@update_is_read_notifications');
+
 
 Route::get('add-employee','Add_employee_Controller@add_elite_employee');
 Route::get('new_emp_add','Add_employee_Controller@get_emp_data');
