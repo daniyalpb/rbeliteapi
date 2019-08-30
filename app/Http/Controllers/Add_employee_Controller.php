@@ -38,6 +38,7 @@ public function new_emp_add_elite(Request $req){
       $req->txtstatus,
       $user_id,
       $user_id,
+
 ));
    		 $msg=$data[0]->Message;
 		 // print_r($msg);exit();

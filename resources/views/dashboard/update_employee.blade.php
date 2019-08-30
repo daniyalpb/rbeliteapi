@@ -51,7 +51,7 @@
       <label>Offical Email Id:</label>
     </div>
     <div class="col-md-7">
-      <input type="text" class="text-primary form-control" name="txtofcmail" id="txtofcmail" value="{{$data[0]->official_emailid}}" id="txtuserid">
+      <input type="text" class="text-primary form-control" name="txtofcmail" id="txtofcmail" value="{{$data[0]->official_emailid}}" id="txtuserid" onblur="validateEmail(this);">
     </div>
   </div>
 
@@ -98,5 +98,19 @@
 </div>
 </form>
 
+<script type="text/javascript">
+  function validateEmail(emailField){
+      //$("#txtemail").val("");
 
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+}
+</script>
   @endsection

@@ -26,6 +26,14 @@ class LoginController extends InitialController{
         ->withErrors($validator)
         ->withInput();
       }else{
+
+
+$data=DB::select("call check_is_active('$request->email')");
+     if ($data[0]->is_active=='0'||$data[0]->Status=='0') {
+      Session::flash('msg', "As You Are Not Active You Can`t Access kindly Contact Support Team!");
+      return redirect('/');
+
+    }else{
               
         $value=DB::table('user_master')->where('email','=',$request->email)
         ->where('password','=', $request->password)
@@ -42,6 +50,7 @@ class LoginController extends InitialController{
               return Redirect::back();  
           }
       }
+    }
       }
 
       public function register_user(){

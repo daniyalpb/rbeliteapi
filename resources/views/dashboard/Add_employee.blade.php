@@ -58,7 +58,7 @@
       <label>Offical Email Id:</label>
     </div>
     <div class="col-md-7">
-      <input type="text" class="text-primary form-control" name="txtofcmail" id="txtofcmail">
+      <input type="text" class="text-primary form-control" name="txtofcmail" id="txtofcmail" onblur="validateEmail(this);">
     </div>
   </div>
 
@@ -142,6 +142,8 @@
 </script>
 <script type="text/javascript">
   function validateEmail(emailField){
+      //$("#txtemail").val("");
+
         var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
         
         if (reg.test(emailField.value) == false) 

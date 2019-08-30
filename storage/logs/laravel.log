@@ -9094,3 +9094,1303 @@ ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\K
 ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
 #56 {main}
 "} 
+[2019-08-28 12:28:05] local.ERROR: Undefined offset: 0 (View: D:\xampp\htdocs\new_rbeliteapi\rbeliteapi\resources\views\dashboard\update_employee.blade.php) {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 (View: D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\esources\\views\\dashboard\\update_employee.blade.php) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21, ErrorException(code: 0): Undefined offset: 0 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2019-08-29 09:50:54] local.ERROR: Undefined offset: 0 (View: D:\xampp\htdocs\new_rbeliteapi\rbeliteapi\resources\views\dashboard\update_employee.blade.php) {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 (View: D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\esources\\views\\dashboard\\update_employee.blade.php) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21, ErrorException(code: 0): Undefined offset: 0 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2019-08-29 09:51:37] local.ERROR: Undefined offset: 0 (View: D:\xampp\htdocs\new_rbeliteapi\rbeliteapi\resources\views\dashboard\update_employee.blade.php) {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 (View: D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\esources\\views\\dashboard\\update_employee.blade.php) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21, ErrorException(code: 0): Undefined offset: 0 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2019-08-29 10:17:55] local.ERROR: Undefined offset: 0 (View: D:\xampp\htdocs\new_rbeliteapi\rbeliteapi\resources\views\dashboard\update_employee.blade.php) {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 (View: D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\esources\\views\\dashboard\\update_employee.blade.php) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21, ErrorException(code: 0): Undefined offset: 0 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2019-08-29 10:27:42] local.ERROR: Undefined offset: 0 (View: D:\xampp\htdocs\new_rbeliteapi\rbeliteapi\resources\views\dashboard\update_employee.blade.php) {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 (View: D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\esources\\views\\dashboard\\update_employee.blade.php) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21, ErrorException(code: 0): Undefined offset: 0 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2019-08-29 10:29:48] local.ERROR: Undefined offset: 0 (View: D:\xampp\htdocs\new_rbeliteapi\rbeliteapi\resources\views\dashboard\update_employee.blade.php) {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 (View: D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\esources\\views\\dashboard\\update_employee.blade.php) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21, ErrorException(code: 0): Undefined offset: 0 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\storage\\framework\\views\\123998411a72e2e96b0995b261a32a712aa704d7.php:21)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#56 {main}
+"} 
+[2019-08-29 11:48:11] local.ERROR: Undefined property: stdClass::$Status {"exception":"[object] (ErrorException(code: 0): Undefined property: stdClass::$Status at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\app\\Http\\Controllers\\LoginController.php:32)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\app\\Http\\Controllers\\LoginController.php(32): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined prope...', 'D:\\\\xampp\\\\htdocs...', 32, Array)
+#1 [internal function]: App\\Http\\Controllers\\LoginController->login(Object(Illuminate\\Http\\Request))
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('login', Array)
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\LoginController), 'login')
+#5 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#53 {main}
+"} 
+[2019-08-30 06:04:35] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE rbelite.usp_insert_elite_emp; expected 8, got 7 (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE rbelite.usp_insert_elite_emp; expected 8, got 7 (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5)) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE rbelite.usp_insert_elite_emp; expected 8, got 7 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:330)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('call usp_insert...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('call usp_insert...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(327): Illuminate\\Database\\Connection->select('call usp_insert...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(221): Illuminate\\Database\\DatabaseManager->__call('select', Array)
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\app\\Http\\Controllers\\Add_employee_Controller.php(40): Illuminate\\Support\\Facades\\Facade::__callStatic('select', Array)
+#5 [internal function]: App\\Http\\Controllers\\Add_employee_Controller->new_emp_add_elite(Object(Illuminate\\Http\\Request))
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('new_emp_add_eli...', Array)
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Add_employee_Controller), 'new_emp_add_eli...')
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#57 {main}
+"} 
+[2019-08-30 06:05:32] local.ERROR: SQLSTATE[HY093]: Invalid parameter number (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5,?)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY093): SQLSTATE[HY093]: Invalid parameter number (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5,?)) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:330)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('call usp_insert...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('call usp_insert...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(327): Illuminate\\Database\\Connection->select('call usp_insert...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(221): Illuminate\\Database\\DatabaseManager->__call('select', Array)
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\app\\Http\\Controllers\\Add_employee_Controller.php(40): Illuminate\\Support\\Facades\\Facade::__callStatic('select', Array)
+#5 [internal function]: App\\Http\\Controllers\\Add_employee_Controller->new_emp_add_elite(Object(Illuminate\\Http\\Request))
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('new_emp_add_eli...', Array)
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Add_employee_Controller), 'new_emp_add_eli...')
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#57 {main}
+"} 
+[2019-08-30 06:06:20] local.ERROR: SQLSTATE[HY093]: Invalid parameter number (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5,?)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY093): SQLSTATE[HY093]: Invalid parameter number (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5,?)) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY093): SQLSTATE[HY093]: Invalid parameter number at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:330)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('call usp_insert...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('call usp_insert...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(327): Illuminate\\Database\\Connection->select('call usp_insert...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(221): Illuminate\\Database\\DatabaseManager->__call('select', Array)
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\app\\Http\\Controllers\\Add_employee_Controller.php(40): Illuminate\\Support\\Facades\\Facade::__callStatic('select', Array)
+#5 [internal function]: App\\Http\\Controllers\\Add_employee_Controller->new_emp_add_elite(Object(Illuminate\\Http\\Request))
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('new_emp_add_eli...', Array)
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Add_employee_Controller), 'new_emp_add_eli...')
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#57 {main}
+"} 
+[2019-08-30 06:11:41] local.ERROR: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE rbelite.usp_insert_elite_emp; expected 8, got 7 (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE rbelite.usp_insert_elite_emp; expected 8, got 7 (SQL: call usp_insert_elite_emp(104,Lalit Test,nitinpatil5222@gmail.com,1,1,5,5)) at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: 42000): SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE rbelite.usp_insert_elite_emp; expected 8, got 7 at D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:330)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('call usp_insert...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(333): Illuminate\\Database\\Connection->run('call usp_insert...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\DatabaseManager.php(327): Illuminate\\Database\\Connection->select('call usp_insert...', Array)
+#3 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(221): Illuminate\\Database\\DatabaseManager->__call('select', Array)
+#4 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\app\\Http\\Controllers\\Add_employee_Controller.php(40): Illuminate\\Support\\Facades\\Facade::__callStatic('select', Array)
+#5 [internal function]: App\\Http\\Controllers\\Add_employee_Controller->new_emp_add_elite(Object(Illuminate\\Http\\Request))
+#6 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#7 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('new_emp_add_eli...', Array)
+#8 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Add_employee_Controller), 'new_emp_add_eli...')
+#9 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#10 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#11 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#14 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#17 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#19 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#20 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#22 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#23 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#25 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#26 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#28 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#29 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#31 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#32 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#34 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#37 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(56): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#39 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#40 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#42 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#43 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#45 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#46 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#48 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#49 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#51 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#54 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\
+ew_rbeliteapi\beliteapi\\server.php(21): require_once('D:\\\\xampp\\\\htdocs...')
+#57 {main}
+"} 
