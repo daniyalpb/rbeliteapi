@@ -211,7 +211,7 @@ function get_notifications_details(){
       var notifications_details = '';
 
       $.each( data , function(key , value){
-        notifications_details += '<a class="dropdown-item preview-item '+ value.is_read +'" id="a_each_notification_'+ value.admin_notif_id +'" data-order_id="'+value.orderid+'" data-is_read="'+ value.is_read +'" data-admin_notificationId="'+value.admin_notif_id+'" onclick="mark_notification_read(this.id)"> <div class="preview-thumbnail" style="cursor:pointer;color:black !important;"> Order Id : ' + value.orderid + ' created. </div> <div class="preview-item-content"> <h6 class="preview-subject font-weight-medium text-dark" ></h6> <p class="font-weight-light small-text"></p> </div> </a> <div class="dropdown-divider"> </div>'; });
+        notifications_details += '<a class="dropdown-item preview-item '+ value.is_read +'" id="a_each_notification_'+ value.admin_notif_id +'" data-order_id="'+value.orderid+'" data-is_read="'+ value.is_read +'" data-admin_notificationId="'+value.admin_notif_id+'" data-source_id="'+ value.source +'" onclick="mark_notification_read(this.id)"> <div class="preview-thumbnail" style="cursor:pointer;color:black !important;"> '+ value.event_name +' for Order Id : ' + value.orderid + ' </div> <div class="preview-item-content"> <h6 class="preview-subject font-weight-medium text-dark" ></h6> <p class="font-weight-light small-text"></p> </div> </a> <div class="dropdown-divider"> </div>'; });
 
       $("#notification_details").html(notifications_details);
       }
@@ -225,6 +225,7 @@ function mark_notification_read(this_id){
   var order_id = $("#" + this_id).attr('data-order_id');
   var is_read = $("#" + this_id).attr('data-is_read');
   var admin_notificationId = $("#" + this_id).attr('data-admin_notificationId');
+  var source_id = $("#" + this_id).attr('data-source_id');
 
   $.ajax({     
     url: "{{URL::to('update-is-read-notifications')}}",
@@ -233,6 +234,14 @@ function mark_notification_read(this_id){
     success: function(response){
       $("#a_each_notification_" + admin_notificationId).removeClass('Unread');
       $("#a_each_notification_" + admin_notificationId).addClass('Read');
+
+      if(source_id == '1'){
+        window.location.href = "{{ url('Basic-Report') }}";
+      }else if(source_id == '2' || source_id == '3' || source_id == '4' || source_id == '5'){
+        window.location.href = "{{ url('crm') }}";
+      }else{
+        window.location.href = "{{ url('dashboard') }}";
+      }
     }
   });
 
